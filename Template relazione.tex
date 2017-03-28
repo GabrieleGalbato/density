@@ -1,0 +1,60 @@
+\documentclass[10pt,oneside,a4paper]{article}
+
+\usepackage[latin1]{inputenc} 
+\usepackage[italian]{babel}
+\usepackage{siunitx} %Inserisce automaticamente i dati con le unità di misura correttamente formattate del SI (utilizzo: \SI{0.82}{m^2}, in generale \SI{misura con il punto decimale}{unità di misura})
+\usepackage{listings} %Per citare codice informatico formattandolo correttamente
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epigraph}
+
+\setcounter{section}{-1}
+
+\title{\textsc{Misura della \emph{densità} e altre cose belle.}}
+\author{\small{G. Galbato Muscio} \and \small{L. Gravina} \and \small{L. Graziotto} \and \small{M. Rescigno}}
+\date{}
+
+\begin{document}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5,trim={2.8cm 8.9cm 0 9cm},clip]{logo.png}
+\end{figure}
+\maketitle
+\begin{center} 
+\fbox{{\fontsize{13pt}{8mm}\textsc{Gruppo C2.3}}} \\
+\vspace{1cm}
+\begin{tabular}{ccc}
+	 Esperienza di laboratorio && Consegna della relazione \\
+	  \emph{\small{30 febbraio 2017}} && \emph{\small{\today}} \\
+\end{tabular} 
+
+\vspace{0.5cm}
+
+\end{center}
+\hrule
+\vspace{0.5cm}
+\begin{abstract}
+\[
+	d = m/V \qquad [d] = \SI{}{Kg/dm^3}
+\]
+La densità è bellissima e poco conosciuta per cui cercheremo qui e ora di descriverne un metodo di determinazione olistico.
+\end{abstract}
+\vspace{0.5cm}
+\tableofcontents %Indice
+\pagebreak
+\section{Convenzioni}
+Qui introdurremo le convenzioni usate. Sappiate che per quanto riguarda l'arrotondamento useremo la mia (Gabriele) convenzione personale in quanto sono arrivato per primo: arrotonderemo $x,5$ in base a ciò che verrà dopo il $5$, cioè per esempio 
+\[
+	4,351 \rightarrow 4,3 \qquad 4,356 \rightarrow 4,4.
+\]
+Consiglio inoltre di utilizzare la \emph{comma} (",") come separatore decimale in luogo del punto per almeno due motivi:
+\begin{enumerate}
+	\item siamo italiani e dobbiamo preservare le nostre tradizioni invece di adattarci a quelle degli aglosassoni (per ricordarvelo, quelli lì usano i \emph{galloni} per misurare i volumi),
+	\item il pacchetto \emph{siunitx} che gestisce le unità di misura secondo il SI utilizza la comma come separatore decimale.
+\end{enumerate}
+\subsection{Convenzioni particolari}
+In realtà è difficile che adotteremo convenzioni non generali ma volevo testare le capacità dell'indice.
+
+\section{Scopo e descrizione dell'esperienza}
+
+\end{document}
