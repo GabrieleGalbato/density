@@ -1,3 +1,4 @@
+%============== PREAMBOLO E DICHIARAZIONI INIZIALI ==========
 \documentclass[10pt,oneside,a4paper]{article}
 
 \usepackage[latin1]{inputenc} 
@@ -7,9 +8,14 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{epigraph}
+\usepackage{booktabs}	%tabelle migliorate
+\usepackage{tablefootnote}	%note a piè di pagina in tabella
+\usepackage{caption}	%descrizione per figure
+\captionsetup{tableposition=top,figureposition=bottom,font=small} %setup descrizione
 
 \setcounter{section}{-1}
 
+%========= PRIMA PAGINA ===========
 \title{\textsc{Misura della \emph{densità} e altre cose belle.}}
 \author{\small{G. Galbato Muscio} \and \small{L. Gravina} \and \small{L. Graziotto} \and \small{M. Rescigno}}
 \date{}
@@ -49,48 +55,66 @@ In questa relazione verranno usate le seguenti convenzioni:
 	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto.
 \end{enumerate}
 
-Questa è una prova per vedere se compila una delle tabelle caricate da Luca.
 \begin{table}[ht]
+\caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A}
+\label{tab:cilindro9_A}
 \centering
 \begin{tabular}{rrrrr}
   \hline
- & Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-palmer(mm) & Massa(g) \\ 
+ & Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
   \hline
-Error: & 0.0010 & 0.0500 & 0.0010 & 0.0003 \\ 
-  Mean: & 20.0165 & 20.0867 & 11.9827 & 6.1080 \\ 
-  1 & 20.0180 & 20.1500 & 11.9750 & 6.1070 \\ 
-  2 & 20.0210 & 20.0500 & 11.9850 & 6.1080 \\ 
-  3 & 20.0190 & 20.1000 & 12.0180 & 6.1070 \\ 
-  4 & 20.0200 & 20.1000 & 11.9740 & 6.1070 \\ 
-  5 & 20.0190 & 20.1000 & 11.9830 & 6.1080 \\ 
-  6 & 20.0110 & 20.0500 & 11.9850 & 6.1080 \\ 
-  7 & 20.0210 & 20.1000 & 11.9780 & 6.1050 \\ 
-  8 & 20.0190 & 20.1000 & 11.9790 & 6.1080 \\ 
-  9 & 20.0150 & 20.1000 & 11.9860 & 6.1070 \\ 
-  10 & 20.0110 & 20.1500 & 11.9800 & 6.1090 \\ 
-  11 & 20.0110 & 20.1000 & 11.9820 & 6.1090 \\ 
-  12 & 20.0150 & 20.0500 & 11.9790 & 6.1090 \\ 
-  13 & 20.0110 & 20.0500 & 11.9890 & 6.1080 \\ 
-  14 & 20.0150 & 20.1000 & 11.9900 & 6.1090 \\ 
-  15 & 20.0200 & 20.0500 & 11.9810 & 6.1090 \\ 
-  16 & 20.0120 & 20.0500 & 11.9820 & 6.1080 \\ 
-  17 & 20.0090 & 20.0500 & 11.9780 & 6.1070 \\ 
-  18 & 20.0150 & 20.1000 & 11.9840 & 6.1090 \\ 
-  19 & 20.0150 & 20.1000 & 11.9800 & 6.1090 \\ 
-  20 & 20.0190 & 20.0500 & 11.9710 & 6.1080 \\ 
-  21 & 20.0250 & 20.0500 & 11.9890 & 6.1090 \\ 
-  22 & 20.0190 & 20.0500 & 11.9840 & 6.1080 \\ 
-  23 & 20.0200 & 20.1000 & 11.9800 & 6.1070 \\ 
-  24 & 20.0100 & 20.1000 & 11.9910 & 6.1080 \\ 
-  25 & 20.0100 & 20.1000 & 11.9800 & 6.1070 \\ 
-  26 & 20.0210 & 20.0500 & 11.9750 & 6.1080 \\ 
-  27 & 20.0200 & 20.1000 & 11.9920 & 6.1090 \\ 
-  28 & 20.0250 & 20.1000 & 11.9810 & 6.1100 \\ 
-  29 & 20.0100 & 20.1000 & 11.9730 & 6.1080 \\ 
-  30 & 20.0200 & 20.1500 & 11.9780 & 6.1080 \\ 
+Error: & 0,0010 & 0,0500 & 0,0010 & 0,0003 \\[0.1cm]
+  Mean: & 20,0165 & 20,0867 & 11,9827 & 6,1080 \\[0.3cm]
+  1 & 20,0180 & 20,1500 & 11,9750 & 6,1070 \\ 
+  2 & 20,0210 & 20,0500 & 11,9850 & 6,1080 \\ 
+  3 & 20,0190 & 20,1000 & 12,0180 & 6,1070 \\ 
+  4 & 20,0200 & 20,1000 & 11,9740 & 6,1070 \\ 
+  5 & 20,0190 & 20,1000 & 11,9830 & 6,1080 \\ 
+  6 & 20,0110 & 20,0500 & 11,9850 & 6,1080 \\ 
+  7 & 20,0210 & 20,1000 & 11,9780 & 6,1050 \\ 
+  8 & 20,0190 & 20,1000 & 11,9790 & 6,1080 \\ 
+  9 & 20,0150 & 20,1000 & 11,9860 & 6,1070 \\ 
+  10 & 20,0110 & 20,1500 & 11,9800 & 6,1090 \\ 
+  11 & 20,0110 & 20,1000 & 11,9820 & 6,1090 \\ 
+  12 & 20,0150 & 20,0500 & 11,9790 & 6,1090 \\ 
+  13 & 20,0110 & 20,0500 & 11,9890 & 6,1080 \\ 
+  14 & 20,0150 & 20,1000 & 11,9900 & 6,1090 \\ 
+  15 & 20,0200 & 20,0500 & 11,9810 & 6,1090 \\ 
+  16 & 20,0120 & 20,0500 & 11,9820 & 6,1080 \\ 
+  17 & 20,0090 & 20,0500 & 11,9780 & 6,1070 \\ 
+  18 & 20,0150 & 20,1000 & 11,9840 & 6,1090 \\ 
+  19 & 20,0150 & 20,1000 & 11,9800 & 6,1090 \\ 
+  20 & 20,0190 & 20,0500 & 11,9710 & 6,1080 \\ 
+  21 & 20,0250 & 20,0500 & 11,9890 & 6,1090 \\ 
+  22 & 20,0190 & 20,0500 & 11,9840 & 6,1080 \\ 
+  23 & 20,0200 & 20,1000 & 11,9800 & 6,1070 \\ 
+  24 & 20,0100 & 20,1000 & 11,9910 & 6,1080 \\ 
+  25 & 20,0100 & 20,1000 & 11,9800 & 6,1070 \\ 
+  26 & 20,0210 & 20,0500 & 11,9750 & 6,1080 \\ 
+  27 & 20,0200 & 20,1000 & 11,9920 & 6,1090 \\ 
+  28 & 20,0250 & 20,1000 & 11,9810 & 6,1100 \\ 
+  29 & 20,0100 & 20,1000 & 11,9730 & 6,1080 \\ 
+  30 & 20,0200 & 20,1500 & 11,9780 & 6,1080 \\ 
    \hline
 \end{tabular}
 \end{table}
+
+\begin{table}[ht]
+\caption{Riepilogo dei valori di altezza misurata con Palmer e nonio, diametro misurato con Palmer e massa del cilindro 9 dei campioni A}
+\label{tab:riepilogo_cilindro9_A}
+\centering
+\begin{tabular}{rrrrrr}
+  \hline
+ & Mean & $\sigma^2$ & $\sigma$ & Max & Min \\ 
+  \hline
+  Altezza-Palmer(mm) & 20,01653 & 0,00002 & 0,00468 & 20,02500 & 20,00900 \\
+  Altezza-nonio(mm) & 20,08667 & 0,00099 & 0,03198 & 20,15000 & 20,05000 \\ 
+  Diametro-Palmer(mm) & 11,98273 & 0,00007 & 0,00854 & 12,01800 & 11,97100 \\ 
+  Massa(g)  & 6,10803 & 0,00000 & 0,00100 & 6,11000 & 6,10500 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
 
 
 
