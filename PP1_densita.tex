@@ -1,0 +1,99 @@
+\documentclass[10pt,oneside,a4paper]{article}
+
+\usepackage[latin1]{inputenc} 
+\usepackage[italian]{babel}
+\usepackage{siunitx} %Inserisce automaticamente i dati con le unità di misura correttamente formattate del SI (utilizzo: \SI{0.82}{m^2}, in generale \SI{misura con il punto decimale}{unità di misura})
+\usepackage{listings} %Per citare codice informatico formattandolo correttamente
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epigraph}
+
+\setcounter{section}{-1}
+
+\title{\textsc{Misura della \emph{densità} e altre cose belle.}}
+\author{\small{G. Galbato Muscio} \and \small{L. Gravina} \and \small{L. Graziotto} \and \small{M. Rescigno}}
+\date{}
+
+\begin{document}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5,trim={2.8cm 8.9cm 0 9cm},clip]{logo.png}
+\end{figure}
+\maketitle
+\begin{center} 
+\fbox{{\fontsize{13pt}{8mm}\textsc{Gruppo B2.3}}} \\
+\vspace{1cm}
+\begin{tabular}{ccc}
+	 Esperienza di laboratorio && Consegna della relazione \\
+	  \emph{\small{27 marzo 2017}} && \emph{\small{3 aprile 2017}} \\
+\end{tabular} 
+
+\vspace{0.5cm}
+
+\end{center}
+\hrule
+\vspace{0.5cm}
+\begin{abstract}
+\[
+	\rho = \frac{m}{V} \qquad [\rho] = \SI{}{\frac{kg}{m^3}}
+\]
+La densità è bellissima e poco conosciuta per cui cercheremo qui e ora di descriverne un metodo di determinazione olistico.
+\end{abstract}
+\vspace{0.5cm}
+\tableofcontents %Indice
+\pagebreak
+\section{Convenzioni}
+In questa relazione verranno usate le seguenti convenzioni:
+\begin{enumerate}
+	\item sarà usata la virgola [ $,$ ] come separatore decimale;
+	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto.
+\end{enumerate}
+
+Questa è una prova per vedere se compila una delle tabelle caricate da Luca.
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-palmer(mm) & Massa(g) \\ 
+  \hline
+Error: & 0.0010 & 0.0500 & 0.0010 & 0.0003 \\ 
+  Mean: & 20.0165 & 20.0867 & 11.9827 & 6.1080 \\ 
+  1 & 20.0180 & 20.1500 & 11.9750 & 6.1070 \\ 
+  2 & 20.0210 & 20.0500 & 11.9850 & 6.1080 \\ 
+  3 & 20.0190 & 20.1000 & 12.0180 & 6.1070 \\ 
+  4 & 20.0200 & 20.1000 & 11.9740 & 6.1070 \\ 
+  5 & 20.0190 & 20.1000 & 11.9830 & 6.1080 \\ 
+  6 & 20.0110 & 20.0500 & 11.9850 & 6.1080 \\ 
+  7 & 20.0210 & 20.1000 & 11.9780 & 6.1050 \\ 
+  8 & 20.0190 & 20.1000 & 11.9790 & 6.1080 \\ 
+  9 & 20.0150 & 20.1000 & 11.9860 & 6.1070 \\ 
+  10 & 20.0110 & 20.1500 & 11.9800 & 6.1090 \\ 
+  11 & 20.0110 & 20.1000 & 11.9820 & 6.1090 \\ 
+  12 & 20.0150 & 20.0500 & 11.9790 & 6.1090 \\ 
+  13 & 20.0110 & 20.0500 & 11.9890 & 6.1080 \\ 
+  14 & 20.0150 & 20.1000 & 11.9900 & 6.1090 \\ 
+  15 & 20.0200 & 20.0500 & 11.9810 & 6.1090 \\ 
+  16 & 20.0120 & 20.0500 & 11.9820 & 6.1080 \\ 
+  17 & 20.0090 & 20.0500 & 11.9780 & 6.1070 \\ 
+  18 & 20.0150 & 20.1000 & 11.9840 & 6.1090 \\ 
+  19 & 20.0150 & 20.1000 & 11.9800 & 6.1090 \\ 
+  20 & 20.0190 & 20.0500 & 11.9710 & 6.1080 \\ 
+  21 & 20.0250 & 20.0500 & 11.9890 & 6.1090 \\ 
+  22 & 20.0190 & 20.0500 & 11.9840 & 6.1080 \\ 
+  23 & 20.0200 & 20.1000 & 11.9800 & 6.1070 \\ 
+  24 & 20.0100 & 20.1000 & 11.9910 & 6.1080 \\ 
+  25 & 20.0100 & 20.1000 & 11.9800 & 6.1070 \\ 
+  26 & 20.0210 & 20.0500 & 11.9750 & 6.1080 \\ 
+  27 & 20.0200 & 20.1000 & 11.9920 & 6.1090 \\ 
+  28 & 20.0250 & 20.1000 & 11.9810 & 6.1100 \\ 
+  29 & 20.0100 & 20.1000 & 11.9730 & 6.1080 \\ 
+  30 & 20.0200 & 20.1500 & 11.9780 & 6.1080 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+\section{Scopo e descrizione dell'esperienza}
+
+\end{document}
