@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  28 MAR 2017 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  29 MAR 2017 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -599,13 +599,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 13705 strings out of 493014
- 271152 string characters out of 6133352
+ 13701 strings out of 493014
+ 271106 string characters out of 6133351
  291347 words of memory out of 5000000
- 17134 multiletter control sequences out of 15000+600000
+ 17130 multiletter control sequences out of 15000+600000
  15095 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,42p,10438b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,42p,10438b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -618,7 +618,7 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on densita.pdf (2 pages, 374542 bytes).
+Output written on densita.pdf (2 pages, 374234 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
