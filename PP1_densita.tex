@@ -4,6 +4,7 @@
 \usepackage[latin1]{inputenc} 
 \usepackage[italian]{babel}
 \usepackage{siunitx} %Inserisce automaticamente i dati con le unità di misura correttamente formattate del SI (utilizzo: \SI{0.82}{m^2}, in generale \SI{misura con il punto decimale}{unità di misura})
+\sisetup{output-decimal-marker = {,}, separate-uncertainty = true, input-uncertainty-signs = \pm} %per usare SI con la virgola decimale
 \usepackage{listings} %Per citare codice informatico formattandolo correttamente
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -16,7 +17,7 @@
 \setcounter{section}{-1}
 
 %========= PRIMA PAGINA ===========
-\title{\textsc{Misura della \emph{densità} e altre cose belle.}}
+\title{\textsc{Misure di \emph{densità}}}
 \author{\small{G. Galbato Muscio} \and \small{L. Gravina} \and \small{L. Graziotto} \and \small{M. Rescigno}}
 \date{}
 
@@ -40,10 +41,11 @@
 \hrule
 \vspace{0.5cm}
 \begin{abstract}
+La densità è definita come il rapporto tra massa e volume, ed è una proprietà intensiva della materia.
 \[
 	\rho = \frac{m}{V} \qquad [\rho] = \SI{}{\frac{kg}{m^3}}
 \]
-La densità è bellissima e poco conosciuta per cui cercheremo qui e ora di descriverne un metodo di determinazione olistico.
+In questa esperienza ci proponiamo di compiere misure di densità di diversi campioni, adottando diversi procedimenti operativi e al fine di determinare il materiale di cui è composto un campione incognito.
 \end{abstract}
 \vspace{0.5cm}
 \tableofcontents %Indice
@@ -53,18 +55,75 @@ In questa relazione verranno usate le seguenti convenzioni:
 \begin{enumerate}
 	\item sarà usata la virgola [ $,$ ] come separatore decimale;
 	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto.
+\end{enumerate} %______________________> controllare meglio le convenzioni
+
+\section{Scopo e descrizione dell'esperienza}
+L'esperienza si sviluppa secondo 5 operazioni sperimentali:
+\begin{enumerate}
+\item misura della densità di un singolo campione, al fine di determinare il materiale di cui è costituito;
+\item misura di 30 campioni dello stesso materiale, per migliorare la stima precedente della densità;
+\item misura di un campione dello stesso materiale dei precedenti, ma con dimensioni differenti, con l'obiettivo di verificare la compatibilità del materiale con quello costitutivo dei 30 campioni;
+\item misura della densità di un singolo campione di materiale differente, al fine di identificarne la composizione; 
+\item determinazione della densità dei campioni già misurati nella seconda fase, utilizzando un metodo grafico.
 \end{enumerate}
 
+\section{Apparato Sperimentale}
+\subsection{Strumenti}
+\label{subsec:strumenti}
+\begin{itemize}
+\item Bilancia di precisione [risoluzione \SI{0,001}{g}, incertezza \SI{0,0003}{g}, portata \SI{7500}{g}];
+\item Calibro a nonio ventesimale [divisione \SI{0,05}{mm}, incertezza \SI{0,05}{mm}];
+\item Calibro Palmer [divisione \SI{0,01}{mm}, incertezza \SI{0,001}{mm}];
+\item Provetta graduata [divisione \SI{2}{mL}, incertezza \SI{0,5}{mL}];
+\end{itemize}
+\subsection{Campioni}
+\begin{itemize}
+\item \textbf{A}: 30 cilindri di dimensioni variabili e materiale incognito (colore argentato lucido\footnote{\label{nt:prior}Utilizziamo il colore e l'aspetto dei campioni come \emph{prior} per escludere materiali come legno, vetro o oro, e dunque per escludere eventuali evidenti errori nella misura.});
+\item \textbf{B}: cilindro dello stesso materiale dei campioni \textbf{A}, ma di diversa dimensione;
+\item \textbf{C}: cilindro con foro prossimo alla base di diverso materiale rispetto ai precedenti (colore dorato lucido\footnote{vedi nota~\ref{nt:prior}}).
+\end{itemize}
+
+\section{Sequenza Operazioni Sperimentali}
+
+\subsection{Verifica degli strumenti}
+Notiamo che il calibro a nonio non ha errore di offset in quanto a battuta l'indice segna $0$; il Palmer presenta invece un offset stimato, prendendo la media di dieci misurazioni, in \SI{0,006 \pm 1000}{mm}. %Inserire incertezza offset Palmer
+La bilancia di precisione può essere tarata a $0$ prima di ogni misurazione; la provetta graduata sarà invece riempita fino a un certo livello e si valuteranno le differenze di indicazioni segnate, permettendo dunque di escludere l'incertezza del valore considerato come~$0$.
+
+\subsection{Misura della densità di un singolo campione}
+Scegliamo come campione dal gruppo \textbf{A} il cilindro che abbiamo numerato $9$.
+La procedura di misurazione consiste in:
+\begin{enumerate}
+\item misura ripetuta 30 volte dell'altezza del cilindro prima con il calibro a nonio e poi con il calibro Palmer;
+\item misura ripetuta 30 volte del diametro del cilindro con il calibro Palmer. Avendo già effettuato una stima preliminare dell'incertezza sulla misura con il nonio e con il Palmer, abbiamo scelto il Palmer per misurare il diametro in quanto è più accurato;
+\item misura ripetuta 30 volte della massa del cilindro con la bilancia di precisione;
+\item calcolo della densità del campione per ognuna delle misure;
+\item stima della densità con relativa incertezza. 
+\end{enumerate}
+Tutti i dati sono riportati nella tabella~\ref{tab:cilindro9_A}. Ricordiamo che l'incertezza degli strumenti è stata riportata nella sezione~\ref{subsec:strumenti}, e che la media viene calcolata con l'equazione
+	\[
+	\bar{x} = \frac{1}{N}\sum_{i=1}^Nx_i,
+	\]
+dove $N=30$ è il numero di misure, e gli $x_i$ sono i singoli valori ottenuti. Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione. La varianza è calcolata con l'equazione
+	\[
+	\sigma^2 = \frac{1}{N}\sum_{i=1}^N(x_i-\bar{x})^2,
+	\]
+mentre la deviazione standard con
+	\[
+	\sigma = \sqrt{\sigma^2}.
+	\]
+%presentazione della media con relativa incertezza
+%qualifica delle sorgenti di errore	
+	
 \begin{table}[ht]
-\caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A}
+\caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
 \label{tab:cilindro9_A}
 \centering
 \begin{tabular}{rrrrr}
   \hline
  & Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
   \hline
-Error: & 0,0010 & 0,0500 & 0,0010 & 0,0003 \\[0.1cm]
-  Mean: & 20,0165 & 20,0867 & 11,9827 & 6,1080 \\[0.3cm]
+  Incertezza: & 0,0010 & 0,0500 & 0,0010 & 0,0003 \\[0.1cm]
+  Media: & 20,0165 & 20,0867 & 11,9827 & 6,1080 \\[0.3cm]
   1 & 20,0180 & 20,1500 & 11,9750 & 6,1070 \\ 
   2 & 20,0210 & 20,0500 & 11,9850 & 6,1080 \\ 
   3 & 20,0190 & 20,1000 & 12,0180 & 6,1070 \\ 
@@ -105,7 +164,7 @@ Error: & 0,0010 & 0,0500 & 0,0010 & 0,0003 \\[0.1cm]
 \centering
 \begin{tabular}{rrrrrr}
   \hline
- & Mean & $\sigma^2$ & $\sigma$ & Max & Min \\ 
+ & Media & $\sigma^2$ & $\sigma$ & Max & Min \\ 
   \hline
   Altezza-Palmer(mm) & 20,01653 & 0,00002 & 0,00468 & 20,02500 & 20,00900 \\
   Altezza-nonio(mm) & 20,08667 & 0,00099 & 0,03198 & 20,15000 & 20,05000 \\ 
@@ -115,9 +174,70 @@ Error: & 0,0010 & 0,0500 & 0,0010 & 0,0003 \\[0.1cm]
 \end{tabular}
 \end{table}
 
+\subsection{Misura della densità dei campioni A}
+Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \textbf{A}, seguendo il procedimento:
+\begin{enumerate}
+\item numerazione dei campioni;
+\item misura della altezza e del diametro di ogni cilindro con il calibro Palmer, scelto in quanto presenta incertezza inferiore a quella del nonio, una sola volta per ciascuno;
+\item misura della massa di ogni cilindro con la bilancia di precisione;
+\item calcolo della densità di ogni campione.
+\end{enumerate}
+I dati sono riportati nella tabella~\ref{tab:campioniA}; poiché altezza e diametro sono stati misurati in \SI{}{mm}, e volendo esprimere la densità nell'unità di misura \SI{}{\frac{g}{cm^3}}, la calcoliamo con l'equazione:
+	\[
+	\rho = \frac{m}{\pi\cdot(\frac{D}{10})^2\cdot\frac{h}{10}},
+	\]
+dove indichiamo con $m$ la massa in \SI{}{g}, con $D$ il diametro in \SI{}{mm} e con $h$ l'altezza in \SI{}{mm}. 
+%calcolo incertezza sulla densità
+Riportiamo quindi negli istogrammi~\ref{fig:ist_campioniA_manual} e \ref{fig:ist_campioniA_pc}, il primo disegnato a mano e il secondo generato con R, le frequenze con cui si ripetono i valori della densità per i campioni \textbf{A}.
+%commento sull'incertezza ottenuta rispetto a 3.2
+Concludiamo che il materiale di cui sono costituiti i campioni sia l'\textbf{alluminio}, in quanto la sua densità, $\rho_{\text{Al}} = \SI{2,70}{g/cm^3}$, è compatibile entro gli errori con il valore da noi ottenuto.
+
+\subsection{Misura della densità del campione B}
+Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. La procedura seguita per determinarne la densità è la seguente:
+\begin{enumerate}
+\item misura unica dell'altezza con il calibro a nonio (in quanto è al di fuori della portata del calibro Palmer);
+\item misura unica del diametro con il calibro Palmer (in quanto più accurato del nonio);
+\item misura unica della massa con la bilancia di precisione.
+\end{enumerate}
+I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}.
+%presentazione della densità con calcolo dell'incertezza
+%commento sulla compatibilità del materiale del gruppo A e del campione B
+%commento sull'incertezza ottenuta rispetto al metodo utilizzato in 3.2
+
+\subsection{Misura della densità del campione C}
+Il campione \textbf{C} è un cilindro che presenta un foro in prossimità della base, che approssimiamo a sua volta come un cilindro di altezza pari al diametro del campione, e di cui calcoliamo il diametro con il calibro a nonio. La procedura seguita per determinarne la densità è la seguente:
+\begin{enumerate}
+\item misura unica del diametro del campione con il calibro Palmer;
+\item misura unica dell'altezza del campione con il calibro Palmer;
+\item misura unica del diametro del foro con il calibro a nonio;
+\item misura unica della massa del campione con la bilancia di precisione;
+\item stima della densità con relativa incertezza e determinazione del materiale di cui il campione è costituito.
+\end{enumerate}
+I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
+%presentazione della densità con calcolo dell'incertezza
+%commento sull'incertezza
+%determinazione del materiale di cui è costituito il campione
+
+\subsection{Misura della densità dei campioni A con metodo grafico}
+Adottiamo ora un altro metodo per determinare la densità dei campioni \textbf{A}, consistente nella misura del volume tramite una provetta graduata e la rappresentazione delle misure di massa e volume su un grafico, da cui ricaviamo la migliore retta di fit, il cui coefficiente angolare sarà legato alla densità dei campioni. La procedura seguita consiste in:
+\begin{enumerate}
+\item suddivisione dei $30$ campioni del gruppo \textbf{A} in $10$ sottogruppi da $3$, e numerazione degli stessi con un numero ordinale (I, II, \dots, IX, X);
+\item misura in modo integrale della massa dei sottogruppi, ovvero misura della massa del sottogruppo I, dei sottogruppi I e II, dei sottogruppi I, II e III, \dots, dei sottogruppi I, II, \dots, X;
+\item riempimento con acqua della provetta graduata e misura del livello raggiunto;
+\item inserimento progressivo dei sottogruppi nello stesso ordine con cui ne è stata misurata la massa. Per ciascuno di essi, misura del livello raggiunto dall'acqua, prestando attenzione alla presenza del menisco (si sceglie di prendere come riferimento il punto più basso dello stesso);
+\item rappresentazione sul grafico~\ref{fig:grafico_campioniA_manuale}, con ascissa la massa e ordinata il volume, dei punti corrispondenti alle misure effettuate con relative incertezze;
+\item estrazione della retta migliore che approssima l'andamento dei punti, stima dell'incertezza;
+\item stima del coefficiente angolare della retta, il cui inverso è pari alla densità dei campioni.
+\end{enumerate}
+I dati ottenuti sono riportati nella tabella~\ref{tab:campioniA_metodografico}, e nel già citato grafico~\ref{fig:grafico_campioniA}. Per confronto con quanto realizzato a mano in laboratorio, si riporta il grafico~\ref{fig:grafico_campioniA_pc} generato con R in un secondo momento.
+%stima dell'intervallo per la densità e relativa incertezza
+%confronto della densità ottenuta e dell'incertezza con i metodi precedenti
 
 
+\section{Considerazioni finali}
+%indicare le sorgenti di errore e come contribuiscono alle incertezze di tipo A e di tipo B
+%commentare sulla qualità delle misure e sulle diverse strategie di misure sperimentate
 
-\section{Scopo e descrizione dell'esperienza}
+
 
 \end{document}

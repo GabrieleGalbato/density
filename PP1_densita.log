@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  29 MAR 2017 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  30 MAR 2017 12:10
 entering extended mode
 
  restricted \write18 enabled.
@@ -542,20 +542,20 @@ Package caption Info: listings package is loaded.
 (./PP1_densita.aux)
 \openout1 = `PP1_densita.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Info: Redefining \it@ocap on input line 23.
-LaTeX Info: Redefining \it@ccap on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Info: Redefining \it@ocap on input line 24.
+LaTeX Info: Redefining \it@ccap on input line 24.
 
 
 File italian.ldf warning: 
@@ -563,7 +563,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 23.
+italian.ldf    on input line 24.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
@@ -642,65 +642,119 @@ Package caption Info: End \AtBeginDocument code.
 <logo.png, id=1, 844.98083pt x 597.38382pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 26.
+Package pdftex.def Info: logo.png used on input line 27.
 (pdftex.def)             Requested size: 382.6556pt x 44.03973pt.
 
-Overfull \hbox (37.6556pt too wide) in paragraph at lines 26--27
+Overfull \hbox (37.6556pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <13> not available
-(Font)              size <12> substituted on input line 30.
+(Font)              size <12> substituted on input line 31.
 
-(./PP1_densita.toc)
+(./PP1_densita.toc [1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo.
+png>])
 \tf@toc=\write3
 \openout3 = `PP1_densita.toc'.
 
- [1
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo.
-png>]
-Overfull \hbox (57.00081pt too wide) in paragraph at lines 62--100
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+ [3] [4]
+Overfull \hbox (77.02858pt too wide) in paragraph at lines 121--159
  [][] 
  []
 
 
-Overfull \hbox (5.66753pt too wide) in paragraph at lines 106--116
+Overfull \hbox (5.66753pt too wide) in paragraph at lines 165--175
  [][] 
  []
 
-[2] [3] (./PP1_densita.aux)
+[5]
+
+LaTeX Warning: Reference `tab:campioniA' on page 6 undefined on input line 185.
+
+
+
+LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 6 undefined on inpu
+t line 191.
+
+
+LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 6 undefined on input li
+ne 191.
+
+
+LaTeX Warning: Reference `tab:cilindro_B' on page 6 undefined on input line 202
+.
+
+[6]
+
+LaTeX Warning: Reference `tab:cilindro_C' on page 7 undefined on input line 216
+.
+
+
+LaTeX Warning: Reference `fig:grafico_campioniA_manuale' on page 7 undefined on
+ input line 228.
+
+
+LaTeX Warning: Reference `tab:campioniA_metodografico' on page 7 undefined on i
+nput line 232.
+
+
+LaTeX Warning: Reference `fig:grafico_campioniA' on page 7 undefined on input l
+ine 232.
+
+
+LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 7 undefined on inpu
+t line 232.
+
+[7] (./PP1_densita.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15046 strings out of 493014
- 294837 string characters out of 6133351
- 326120 words of memory out of 5000000
- 18445 multiletter control sequences out of 15000+600000
- 15095 words of font info for 56 fonts, out of 8000000 for 9000
+ 15085 strings out of 493014
+ 295491 string characters out of 6133351
+ 326102 words of memory out of 5000000
+ 18480 multiletter control sequences out of 15000+600000
+ 15754 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,42p,10442b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,42p,10497b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on PP1_densita.pdf (3 pages, 386300 bytes).
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on PP1_densita.pdf (7 pages, 450339 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  12 words of extra memory for PDF output out of 10000 (max. 10000000)
 
