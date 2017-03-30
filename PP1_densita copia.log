@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  30 MAR 2017 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  30 MAR 2017 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -659,61 +659,65 @@ png>])
 \tf@toc=\write3
 \openout3 = `"PP1_densita copia.toc"'.
 
+ (./PP1_densita copia.lot)
+\tf@lot=\write4
+\openout4 = `"PP1_densita copia.lot"'.
+
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
  [3] [4] [5]
-Overfull \hbox (77.02858pt too wide) in paragraph at lines 160--198
+Overfull \hbox (77.02858pt too wide) in paragraph at lines 161--199
  [][] 
  []
 
 
-Overfull \hbox (5.66753pt too wide) in paragraph at lines 204--214
+Overfull \hbox (5.66753pt too wide) in paragraph at lines 205--215
  [][] 
  []
 
 
-LaTeX Warning: Reference `tab:campioniA' on page 6 undefined on input line 224.
+LaTeX Warning: Reference `tab:campioniA' on page 6 undefined on input line 225.
 
 
 
 LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 6 undefined on inpu
-t line 230.
+t line 231.
 
 
 LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 6 undefined on input li
-ne 230.
+ne 231.
 
 [6]
 
-LaTeX Warning: Reference `tab:cilindro_B' on page 7 undefined on input line 241
+LaTeX Warning: Reference `tab:cilindro_B' on page 7 undefined on input line 242
 .
 
 
-LaTeX Warning: Reference `tab:cilindro_C' on page 7 undefined on input line 255
+LaTeX Warning: Reference `tab:cilindro_C' on page 7 undefined on input line 256
 .
 
 [7]
 
 LaTeX Warning: Reference `fig:grafico_campioniA_manuale' on page 8 undefined on
- input line 267.
+ input line 268.
 
 
 LaTeX Warning: Reference `tab:campioniA_metodografico' on page 8 undefined on i
-nput line 271.
+nput line 272.
 
 
 LaTeX Warning: Reference `fig:grafico_campioniA' on page 8 undefined on input l
-ine 271.
+ine 272.
 
 
 LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 8 undefined on inpu
-t line 271.
+t line 272.
 
 
 Overfull \hbox (9.52846pt too wide) in paragraph at lines 330--348
@@ -730,13 +734,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15096 strings out of 493014
- 295763 string characters out of 6133351
+ 15099 strings out of 493014
+ 295811 string characters out of 6133352
  338205 words of memory out of 5000000
  18491 multiletter control sequences out of 15000+600000
  15754 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,16n,42p,10505b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,42p,10505b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -751,14 +755,13 @@ exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (11 pages, 467571 bytes).
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "PP1_densita copia.pdf" (11 pages, 458095 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  12 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -49,6 +49,7 @@ In questa esperienza ci proponiamo di compiere misure di densità di diversi camp
 \end{abstract}
 \vspace{0.5cm}
 \tableofcontents %Indice
+\listoftables %Indice delle tabelle
 \pagebreak
 \section{Convenzioni e formule}
 In questa relazione verranno usate le seguenti convenzioni:
@@ -136,11 +137,11 @@ Le misure con il calibro Palmer sono sintetizzate da
 	\bar{h} = \SI{20,01653}{mm} \qquad \sigma = \SI{0,00468}{mm}
 \] con le stesse notazioni di prima. A differenza del calibro a nonio, il Palmer è uno strumento meccanicamente predisposto ad errori di offset e in questo caso specifico, facendo $10$ misure dello $0$\footnote{La scelta di calcolare la dispersione sull'offset effettuando più misure invece di usare quella già trovata misurando le altezze è giustificata dal fatto che non possiamo essere sicuri dell'assoluta linearità della risposta dello strumento, esso potrebbe infatti avere una risposta diversa nei pressi dello 0.}, risulta
 \[
-	\bar{z} = \SI{0,006}{mm} \qquad \sigma_z = \SI{0,0035}{mm}.
+	\bar{z} = \SI{0,006}{mm} \qquad \sigma_z = \SI{0,0035}{mm},
 \]
-Dovremo quindi tener conto anche della dispersione dell'offset nella propagazione dell'incertezza su questa misura. L'incertezza di tipo B del calibro Palmer può essere stimata nell'ordine di $u_p = \SI{0,001}{mm}$, propagando l'errore sulla misura otteniamo
+le misure dell'offset sono riportate nella tabella \ref{tab:offset}. Dovremo quindi tener conto anche della dispersione dell'offset nella propagazione dell'incertezza su questa misura. L'incertezza di tipo B del calibro Palmer può essere stimata nell'ordine di $u_p = \SI{0,001}{mm}$, propagando l'errore sulla misura otteniamo
 \begin{align*}
-	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_p \underbrace{\oplus \frac{\sigma_z}{\sqrt{10}} \oplus u_p}_{\mathrm{incertezza} \; \mathrm{sull'offset}} \\
+	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_p \oplus \frac{\sigma_z}{\sqrt{10}} \oplus u_p\\
 			&= \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + \left(\frac{\sigma_z}{\sqrt{10}}\right)^2 + 2 u_p^2} = \SI{0,0020}{mm}
 \end{align*}
 dove abbiamo considerato l'incertezza strumentale sia nella misura dell'altezza che in quella dello $0$. L'incertezza relativa è quindi, in percentuale,
@@ -277,7 +278,6 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:campioniA_metodografico}, 
 %indicare le sorgenti di errore e come contribuiscono alle incertezze di tipo A e di tipo B
 %commentare sulla qualità delle misure e sulle diverse strategie di misure sperimentate
 
-\section{altre tabelle}
 
 \begin{table}[ht]
 \caption{Singole misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sui 30 cilindri. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
