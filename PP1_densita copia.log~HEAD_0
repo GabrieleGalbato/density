@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  30 MAR 2017 18:01
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.22)  30 MAR 2017 18:13
+>>>>>>> Stashed changes:PP1_densita.log
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,8 +542,25 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count165
 Package caption Info: listings package is loaded.
 )
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
 (./PP1_densita copia.aux)
 \openout1 = `"PP1_densita copia.aux"'.
+=======
+(./PP1_densita.aux
+
+./PP1_densita.aux:31: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 <
+      <<<<<< HEAD
+? s
+OK, entering \scrollmode...
+)
+\openout1 = `PP1_densita.aux'.
+>>>>>>> Stashed changes:PP1_densita.log
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -648,10 +669,18 @@ Overfull \hbox (37.6556pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
+=======
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo.
+png>]
+>>>>>>> Stashed changes:PP1_densita.log
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <13> not available
 (Font)              size <12> substituted on input line 31.
 
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
 (./PP1_densita copia.toc [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo.
@@ -663,11 +692,74 @@ png>])
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+=======
+(./PP1_densita.toc
+
+./PP1_densita.toc:16: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...}{\numberline {4}Considerazioni finali}{8}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./PP1_densita.toc:16: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...}{\numberline {4}Considerazioni finali}{8}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./PP1_densita.toc:18: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...}{\numberline {4}Considerazioni finali}{7}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./PP1_densita.toc:18: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...}{\numberline {4}Considerazioni finali}{7}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+\tf@toc=\write3
+\openout3 = `PP1_densita.toc'.
+
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+>>>>>>> Stashed changes:PP1_densita.log
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
  [3] [4] [5]
+=======
+ [3]
+[4] [5]
+>>>>>>> Stashed changes:PP1_densita.log
 Overfull \hbox (77.02858pt too wide) in paragraph at lines 160--198
  [][] 
  []
@@ -720,7 +812,11 @@ Overfull \hbox (9.52846pt too wide) in paragraph at lines 330--348
  [][] 
  []
 
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
 [8] [9] [10] [11] (./PP1_densita copia.aux)
+=======
+[8] [9] [10] [11] (./PP1_densita.aux)
+>>>>>>> Stashed changes:PP1_densita.log
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -728,6 +824,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
  ) 
 Here is how much of TeX's memory you used:
  15096 strings out of 493014
@@ -737,6 +834,20 @@ Here is how much of TeX's memory you used:
  15754 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,42p,10505b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 15096 strings out of 493014
+ 295695 string characters out of 6133351
+ 338270 words of memory out of 5000000
+ 18491 multiletter control sequences out of 15000+600000
+ 15754 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,16n,42p,10497b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> Stashed changes:PP1_densita.log
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -755,7 +866,11 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+<<<<<<< Updated upstream:PP1_densita copia.log~HEAD_0
 Output written on "PP1_densita copia.pdf" (11 pages, 467571 bytes).
+=======
+Output written on PP1_densita.pdf (11 pages, 468448 bytes).
+>>>>>>> Stashed changes:PP1_densita.log
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
