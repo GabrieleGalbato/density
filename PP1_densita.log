@@ -1,6 +1,5 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  30 MAR 2017 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.22)  30 MAR 2017 16:00
 entering extended mode
-
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -716,7 +715,12 @@ ine 232.
 LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 7 undefined on inpu
 t line 232.
 
-[7] (./PP1_densita.aux)
+
+Overfull \hbox (9.52846pt too wide) in paragraph at lines 291--309
+ [][] 
+ []
+
+[7] [8] [9] (./PP1_densita.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -726,10 +730,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15085 strings out of 493014
- 295491 string characters out of 6133351
- 326102 words of memory out of 5000000
- 18480 multiletter control sequences out of 15000+600000
+ 15087 strings out of 493014
+ 295522 string characters out of 6133351
+ 329118 words of memory out of 5000000
+ 18482 multiletter control sequences out of 15000+600000
  15754 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,42p,10497b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -751,10 +755,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on PP1_densita.pdf (7 pages, 450339 bytes).
+Output written on PP1_densita.pdf (9 pages, 453413 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  12 words of extra memory for PDF output out of 10000 (max. 10000000)
 
