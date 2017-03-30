@@ -12,4 +12,9 @@
 \contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{7}
 \contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{7}
 \contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{7}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {4}Considerazioni finali}{8}
+=======
+\contentsline {section}{\numberline {4}Considerazioni finali}{7}
+\contentsline {section}{\numberline {5}altre tabelle}{7}
+>>>>>>> origin/master
