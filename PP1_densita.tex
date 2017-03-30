@@ -50,12 +50,30 @@ In questa esperienza ci proponiamo di compiere misure di densità di diversi camp
 \vspace{0.5cm}
 \tableofcontents %Indice
 \pagebreak
-\section{Convenzioni}
+\section{Convenzioni e formule}
 In questa relazione verranno usate le seguenti convenzioni:
 \begin{enumerate}
 	\item sarà usata la virgola [ $,$ ] come separatore decimale;
-	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto.
-\end{enumerate} %______________________> controllare meglio le convenzioni
+	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto;
+	\item al fine di migliorare la qualità dell'elaborazione dei dati, ogni grafico/istogramma prodotto a mano su carta millimetrata sarà riportato insieme al suo equivalente prodotto attraverso un software di analisi dati\footnote{In questo contesto i dati sono stati elaborati con il software di analisi \emph{R}.};
+	\item tutti i conti e i risultati parziali saranno presentati senza tenere cura delle cifre significative, i risultati finali saranno invece presentati correttamente nella sezione \ref{sec:c_finali}.
+\end{enumerate}
+Inoltre, si farà riferimento alle seguenti formule:
+\begin{enumerate}
+	\item media 
+		\begin{equation}\label{eq:media}
+			\bar{x} = \frac{1}{N}\sum_{i=1}^Nx_i;
+		\end{equation}
+	\item varianza
+		\begin{equation}\label{eq:varianza}
+			\sigma^2 = \frac{1}{N}\sum_{i=1}^N(x_i-\bar{x})^2;
+		\end{equation}
+	\item deviazione standard
+		\begin{equation}\label{eq:deviazione}
+			\sigma = \sqrt{\sigma^2}.
+		\end{equation}	
+\end{enumerate}
+	%______________________> controllare meglio le convenzioni
 
 \section{Scopo e descrizione dell'esperienza}
 L'esperienza si sviluppa secondo 5 operazioni sperimentali:
@@ -85,32 +103,53 @@ L'esperienza si sviluppa secondo 5 operazioni sperimentali:
 
 \section{Sequenza Operazioni Sperimentali}
 
-\subsection{Verifica degli strumenti}
-Notiamo che il calibro a nonio non ha errore di offset in quanto a battuta l'indice segna $0$; il Palmer presenta invece un offset stimato, prendendo la media di dieci misurazioni, in \SI{0,006 \pm 1000}{mm}. %Inserire incertezza offset Palmer
+\subsection{Verifica degli strumenti}\label{subsec:verifica}
+Un primo controllo sugli strumenti di misura ci porta a concludere che il calibro ventesimale è ben tarato e non presenta offset evidenti (come, d'altronde, ci aspettavamo per il modo di costruzione dello strumento); il calibro Palmer risulta invece essere soggetto di un offset di valutazione incerta, approfondiremo il problema nella sezione \ref{subsec:singolo_campione}.
 La bilancia di precisione può essere tarata a $0$ prima di ogni misurazione; la provetta graduata sarà invece riempita fino a un certo livello e si valuteranno le differenze di indicazioni segnate, permettendo dunque di escludere l'incertezza del valore considerato come~$0$.
 
-\subsection{Misura della densità di un singolo campione}
+\subsection{Misura della densità di un singolo campione}\label{subsec:singolo_campione}
 Scegliamo come campione dal gruppo \textbf{A} il cilindro che abbiamo numerato $9$.
 La procedura di misurazione consiste in:
 \begin{enumerate}
 \item misura ripetuta 30 volte dell'altezza del cilindro prima con il calibro a nonio e poi con il calibro Palmer;
-\item misura ripetuta 30 volte del diametro del cilindro con il calibro Palmer. Avendo già effettuato una stima preliminare dell'incertezza sulla misura con il nonio e con il Palmer, abbiamo scelto il Palmer per misurare il diametro in quanto è più accurato;
+\item valutazione dello strumento nel complesso più adatto alle nostre misure; come argomentato nel seguito, il calibro Palmer è\footnote{Nel limite di questa relazione e delle opinioni dei quattro autori.} la scelta più adatta;
+\item misura ripetuta 30 volte del diametro del cilindro con il calibro Palmer;
 \item misura ripetuta 30 volte della massa del cilindro con la bilancia di precisione;
 \item calcolo della densità del campione per ognuna delle misure;
 \item stima della densità con relativa incertezza. 
 \end{enumerate}
-Tutti i dati sono riportati nella tabella~\ref{tab:cilindro9_A}. Ricordiamo che l'incertezza degli strumenti è stata riportata nella sezione~\ref{subsec:strumenti}, e che la media viene calcolata con l'equazione
-	\[
-	\bar{x} = \frac{1}{N}\sum_{i=1}^Nx_i,
-	\]
-dove $N=30$ è il numero di misure, e gli $x_i$ sono i singoli valori ottenuti. Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione. La varianza è calcolata con l'equazione
-	\[
-	\sigma^2 = \frac{1}{N}\sum_{i=1}^N(x_i-\bar{x})^2,
-	\]
-mentre la deviazione standard con
-	\[
-	\sigma = \sqrt{\sigma^2}.
-	\]
+Tutti i dati sperimentali raccolti sono riportati nella tabella~\ref{tab:cilindro9_A}. Per determinare quale tra il calibro ventesimale e il calibro Palmer sia più adatto alla nostra esperienza, e di conseguenza per determinare lo strumento con il quale effettuare il resto delle misure di questa sezione, confrontiamo le incertezze relative all'altezza nei due diversi casi. \\
+Le misure con il calibro a nonio sono sintetizzate da
+\[
+	\bar{h} = \SI{20,08667}{mm} \qquad \sigma = \SI{0,03198}{mm}
+\]dove con $\bar{h}$ intendiamo la media calcolata con (\ref{eq:media}), mentre con $\sigma$ intendiamo la deviazione standard calcolata con (\ref{eq:deviazione}). Per quanto detto nella sezione \ref{subsec:verifica}, il calibro a nonio non presenta alcun errore di calibrazione nella misura dello $0$, non essendo uno strumento tendenzialmente affetto da offset considereremo credibile questo risultato e non propagheremo un'eventuale incertezza nella misura dello $0$. L'errore di tipo B stimato per questo strumento è quello riportato nella sezione \ref{subsec:strumenti}, cioè $u_n = \SI{0,05}{mm}$. La misura dell'altezza $h$ effettuata con il calibro a nonio è quindi soggetta ad un'incertezza $\sigma_T$ stimabile come
+\begin{align*}\label{eq:sigma_h_nonio}
+	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_n \\
+			&= \sqrt{(\frac{\sigma}{\sqrt{30}})^2 + u_n^2} = \SI{0,05}{mm}.
+\end{align*}
+Risultato prevedibile in quanto $\sigma/\sqrt{30}$ è di diversi ordini di grandezza inferiore di $u_n$. L'incertezza relativa all'altezza misurata con il calibro a nonio è quindi, in percentuale, 
+\begin{equation}\label{eq:incertezza_percentuale_nonio}
+	\frac{\sigma_T}{\bar{h}} = 0,25 \%.
+\end{equation}
+Le misure con il calibro Palmer sono sintetizzate da
+\[
+	\bar{h} = \SI{20,01653}{mm} \qquad \sigma = \SI{0,00468}{mm}
+\] con le stesse notazioni di prima. A differenza del calibro a nonio, il Palmer è uno strumento meccanicamente predisposto ad errori di offset e in questo caso specifico, facendo $10$ misure dello $0$\footnote{La scelta di calcolare la dispersione sull'offset effettuando più misure invece di usare quella già trovata misurando le altezze è giustificata dal fatto che non possiamo essere sicuri dell'assoluta linearità della risposta dello strumento, esso potrebbe infatti avere una risposta diversa nei presi dello 0.}, risulta
+\[
+	\bar{z} = \SI{0,006}{mm} \qquad \sigma_z = \SI{0,0035}{mm}.
+\]
+Dovremo quindi tener conto anche della dispersione dell'offset nella propagazione dell'incertezza su questa misura. L'incertezza di tipo B del calibro Palmer può essere stimata nell'ordine di $u_p = \SI{0,001}{mm}$, propagando l'errore sulla misura otteniamo
+\begin{align*}
+	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_p \underbrace{\oplus \frac{\sigma_z}{\sqrt{10}} \oplus u_p}_{\mathrm{incertezza} \; \mathrm{sull'offset}} \\
+			&= \sqrt{(\frac{\sigma}{\sqrt{30}})^2 + (\frac{\sigma_z}{\sqrt{10}})^2 + 2 u_p^2} = \SI{0,0020}{mm}
+\end{align*}
+dove abbiamo considerato l'incertezza strumentale sia nella misura dell'altezza che in quella dello $0$. L'incertezza relativa è quindi, in percentuale,
+\begin{equation}\label{eq:incertezza_percentuale_palmer}
+	\frac{\sigma_T}{\bar{h}} = 0,01 \%.
+\end{equation}
+Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate con il calibro Palmer è nettamente inferiore di quella sulle misure del nonio, abbiamo quindi scelto il calibro Palmer per effettuare (ove possibile) le successive misure di lunghezza. \\
+Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione.
+
 %presentazione della media con relativa incertezza
 %qualifica delle sorgenti di errore	
 	
@@ -159,7 +198,7 @@ mentre la deviazione standard con
 \end{table}
 
 \begin{table}[ht]
-\caption{Riepilogo dei valori di altezza misurata con Palmer e nonio, diametro misurato con Palmer e massa del cilindro 9 dei campioni A}
+\caption{Riepilogo dei valori di altezza misurata con Palmer e nonio, diametro misurato con Palmer e massa del cilindro 9 dei campioni A.}
 \label{tab:riepilogo_cilindro9_A}
 \centering
 \begin{tabular}{rrrrrr}
@@ -182,7 +221,7 @@ Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \
 \item misura della massa di ogni cilindro con la bilancia di precisione;
 \item calcolo della densità di ogni campione.
 \end{enumerate}
-I dati sono riportati nella tabella~\ref{tab:campioniA}; poiché altezza e diametro sono stati misurati in \SI{}{mm}, e volendo esprimere la densità nell'unità di misura \SI{}{\frac{g}{cm^3}}, la calcoliamo con l'equazione:
+I dati sono riportati nella tabella~\ref{tab:campioniA}; poiché altezza e diametro sono stati misurati in \SI{}{mm}, e volendo esprimere la densità nell'unità di misura \SI{}{[g/cm^3]}, la calcoliamo con l'equazione:
 	\[
 	\rho = \frac{m}{\pi\cdot(\frac{D}{10})^2\cdot\frac{h}{10}},
 	\]
@@ -234,7 +273,7 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:campioniA_metodografico}, 
 %confronto della densità ottenuta e dell'incertezza con i metodi precedenti
 
 
-\section{Considerazioni finali}
+\section{Considerazioni finali}\label{sec:c_finali}
 %indicare le sorgenti di errore e come contribuiscono alle incertezze di tipo A e di tipo B
 %commentare sulla qualità delle misure e sulle diverse strategie di misure sperimentate
 
