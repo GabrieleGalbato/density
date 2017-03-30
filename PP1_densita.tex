@@ -125,7 +125,7 @@ Le misure con il calibro a nonio sono sintetizzate da
 \]dove con $\bar{h}$ intendiamo la media calcolata con (\ref{eq:media}), mentre con $\sigma$ intendiamo la deviazione standard calcolata con (\ref{eq:deviazione}). Per quanto detto nella sezione \ref{subsec:verifica}, il calibro a nonio non presenta alcun errore di calibrazione nella misura dello $0$, non essendo uno strumento tendenzialmente affetto da offset considereremo credibile questo risultato e non propagheremo un'eventuale incertezza nella misura dello $0$. L'errore di tipo B stimato per questo strumento è quello riportato nella sezione \ref{subsec:strumenti}, cioè $u_n = \SI{0,05}{mm}$. La misura dell'altezza $h$ effettuata con il calibro a nonio è quindi soggetta ad un'incertezza $\sigma_T$ stimabile come
 \begin{align*}\label{eq:sigma_h_nonio}
 	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_n \\
-			&= \sqrt{(\frac{\sigma}{\sqrt{30}})^2 + u_n^2} = \SI{0,05}{mm}.
+			&= \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_n^2} = \SI{0,05}{mm}.
 \end{align*}
 Risultato prevedibile in quanto $\sigma/\sqrt{30}$ è di diversi ordini di grandezza inferiore di $u_n$. L'incertezza relativa all'altezza misurata con il calibro a nonio è quindi, in percentuale, 
 \begin{equation}\label{eq:incertezza_percentuale_nonio}
@@ -141,7 +141,7 @@ Le misure con il calibro Palmer sono sintetizzate da
 Dovremo quindi tener conto anche della dispersione dell'offset nella propagazione dell'incertezza su questa misura. L'incertezza di tipo B del calibro Palmer può essere stimata nell'ordine di $u_p = \SI{0,001}{mm}$, propagando l'errore sulla misura otteniamo
 \begin{align*}
 	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_p \underbrace{\oplus \frac{\sigma_z}{\sqrt{10}} \oplus u_p}_{\mathrm{incertezza} \; \mathrm{sull'offset}} \\
-			&= \sqrt{(\frac{\sigma}{\sqrt{30}})^2 + (\frac{\sigma_z}{\sqrt{10}})^2 + 2 u_p^2} = \SI{0,0020}{mm}
+			&= \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + \left(\frac{\sigma_z}{\sqrt{10}}\right)^2 + 2 u_p^2} = \SI{0,0020}{mm}
 \end{align*}
 dove abbiamo considerato l'incertezza strumentale sia nella misura dell'altezza che in quella dello $0$. L'incertezza relativa è quindi, in percentuale,
 \begin{equation}\label{eq:incertezza_percentuale_palmer}
