@@ -149,8 +149,47 @@ dove abbiamo considerato l'incertezza strumentale sia nella misura dell'altezza 
 	\frac{\sigma_T}{\bar{h}} = 0,01 \%.
 \end{equation}
 Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate con il calibro Palmer è nettamente inferiore di quella sulle misure del nonio, abbiamo quindi scelto il calibro Palmer per effettuare (ove possibile) le successive misure di lunghezza. \\
-Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione.
-
+Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione. \\
+Dopo aver effettuato tutte le misure necessarie, ossia diametro e massa di ogni cilindro, siamo in grado di calcolare la densità relativa ad ogni misura attraverso l'equazione
+\begin{equation}\label{eq:densita}
+	 \rho = \frac{m}{\pi\cdot(\frac{D}{10})^2\cdot\frac{h}{10}}
+\end{equation} che restituisce la densità in $\SI{}{g/cm^3}$, ottenendo i dati riportati nella tabella \ref{tab:densita_1}. Di queste 30 misure di densità possiamo ricavarne media ($\bar{\rho}$) e deviazione standard ($\sigma$), in particolare:
+\[
+	\bar{\rho} = \qquad \sigma = \;.
+\] La propagazione dell'incertezza su questa misura necessità, però, di alcune riflessioni: nell'equazione (\ref{eq:densita}) compare il prodotto $(D^2 \cdot h)$, che è un prodotto di due misure di lunghezza effettuate con lo stesso strumento di misura (il calibro Palmer) e quindi necessariamente correlate (per via dello stesso offset), per propagare l'incertezza dobbiamo quindi prima di tutto studiare come tale correlazione la influenza. Ricordiamo che, in generale, la densità è data da
+\begin{equation}\label{eq:densita_gen}
+	\rho = \frac{m}{V}
+\end{equation} dove $m$ è la massa e $V$ il volume (le relative unità di misura cambiano da contesto a contesto); ovviamente le misure di massa e di volume sono misure scorrelate, dal momento che sono state effettuate con metodi e strumenti completamente diversi, per cui è possibile applicare direttamente la formula per l'incertezza relativa di una funzione monomia ed ottenere la propagazione dell'incertezza sulla densità a partire da quelle sulla massa e sul volume: occupiamoci quindi di stimare quest'ultima, poi penseremo al resto. \\
+Considerando che si tratta di cilindri approssimativamente regolari, il volume è dato da
+\begin{equation}\label{eq:volume}
+	V = \pi \cdot \left(\frac{D}{10}\right)^2 \cdot \frac{h}{10}.
+\end{equation} Scriviamo adesso le due grandezze correlate (che sono anche le uniche due variabili della funzione) in relazione al \emph{valore vero} (indicato con la dicitura \emph{star}) e all'offset ($z_0$), cioè
+\[
+	D = D^{*} - z_0 \qquad h = h^{*} - z_0
+\] e sostituiamole in (\ref{eq:volume}), in modo da ottenere
+\begin{equation}\label{eq:volume_2}
+	V = \pi \cdot \left(\frac{D^{*} - z_0}{10}\right)^2 \cdot \frac{h^{*}-z_0}{10}
+\end{equation}
+dove si è aggiunta una terza variabile $z_0$. Espandendo in serie di Taylor intorno al punto medio possiamo propagare l'incertezza su $\rho$ come
+\begin{equation}\label{eq:sigma_V}
+	\sigma_T^2 =  \left( \left. \frac{\partial V}{\partial D^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{D^{*}}^2 + \left( \left. \frac{\partial V}{\partial h^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{h^{*}}^2 + \left( \left. \frac{\partial V}{\partial z_0^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_z_0^2
+\end{equation} dove
+\begin{align*}
+	\frac{\partial V}{\partial D^{*}} &= \frac{\pi}{4} ( 2 D^{*}h^{*} - 2 D^{*} z_0 - 2 h^{*} z_0 + 2 z_0^2) \\
+	\frac{\partial V}{\partial h^{*}} &= \frac{\pi}{4} (D^{*2} + z_0^2 - 2 D^{*}z_0) \\
+	\frac{\partial V}{\partial z_0^{*}} &= \frac{\pi}{4} ( - D^{*2} + 2 z_0 h^{*} - 3 z_0^2 - 2d^{*}h^{*} + 4d^{*}z_0)
+\end{align*} e $\sigma_{D^{*}}, \sigma_{h^{*}}, \sigma_z_0$ sono le deviazioni standard delle misure nella tabella \ref{tab:cilindro9_A}. L'incertezza finale sul volume è quindi
+\begin{equation}\label{eq:sigma_V_finale}
+	\sigma_V = X.
+\end{equation} Riprendendo adesso l'equazione (\ref{eq:densita_gen}) essendo le variabili scorrelate possiamo utilizzare la formula di propagazione dell'incertezza su funzioni monomie:
+\begin{align}\label{eq:sigma_rho}
+	\frac{\sigma_{\rho}}{\bar{\rho}} &= \frac{\sigma_V}{\bar{V}} \oplus \frac{\sigma_m}{\bar{m}} \\
+							&= X.
+\end{align} che si riduce ad essere una semplice somma in quadratura. \\
+Concludiamo allora che la stima che statisticamente meglio approssima la \emph{vera} densità del cilindro numerato 9 è
+\begin{equation}\label{eq:sigma_rho_finale}
+	\rho = \bar{\rho} \pm \sigma_{\rho}.
+\end{equation}
 %presentazione della media con relativa incertezza
 %qualifica delle sorgenti di errore	
 	

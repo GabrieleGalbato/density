@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  30 MAR 2017 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  30 MAR 2017 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,59 +672,75 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
  [3] [4] [5]
-Overfull \hbox (77.02858pt too wide) in paragraph at lines 161--199
- [][] 
- []
 
+LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 156.
 
-Overfull \hbox (5.66753pt too wide) in paragraph at lines 205--215
- [][] 
- []
-
-
-LaTeX Warning: Reference `tab:campioniA' on page 6 undefined on input line 225.
-
-
-
-LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 6 undefined on inpu
-t line 231.
-
-
-LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 6 undefined on input li
-ne 231.
 
 [6]
+./PP1_densita copia.tex:175: Double subscript.
+l.175 ...\right\vert_{\bar{V}} \right)^2 \sigma_z_
+                                                  0^2
+? s
+OK, entering \scrollmode...
+./PP1_densita copia.tex:181: Double subscript.
+l.181 ...\sigma_{D^{*}}, \sigma_{h^{*}}, \sigma_z_
+                                                  0$ sono le deviazioni stan...
+I treat `x_1_2' essentially like `x_1{}_2'.
 
-LaTeX Warning: Reference `tab:cilindro_B' on page 7 undefined on input line 242
-.
+
+Overfull \hbox (77.02858pt too wide) in paragraph at lines 200--238
+ [][] 
+ []
 
 
-LaTeX Warning: Reference `tab:cilindro_C' on page 7 undefined on input line 256
-.
+Overfull \hbox (5.66753pt too wide) in paragraph at lines 244--254
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `tab:campioniA' on page 7 undefined on input line 264.
+
 
 [7]
 
-LaTeX Warning: Reference `fig:grafico_campioniA_manuale' on page 8 undefined on
- input line 268.
+LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 8 undefined on inpu
+t line 270.
 
 
-LaTeX Warning: Reference `tab:campioniA_metodografico' on page 8 undefined on i
-nput line 272.
+LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 8 undefined on input li
+ne 270.
 
 
-LaTeX Warning: Reference `fig:grafico_campioniA' on page 8 undefined on input l
-ine 272.
+LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 281
+.
 
 
-LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 8 undefined on inpu
-t line 272.
+LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 295
+.
+
+[8]
+
+LaTeX Warning: Reference `fig:grafico_campioniA_manuale' on page 9 undefined on
+ input line 307.
 
 
-Overfull \hbox (9.52846pt too wide) in paragraph at lines 330--348
+LaTeX Warning: Reference `tab:campioniA_metodografico' on page 9 undefined on i
+nput line 311.
+
+
+LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
+ine 311.
+
+
+LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 9 undefined on inpu
+t line 311.
+
+
+Overfull \hbox (9.52846pt too wide) in paragraph at lines 369--387
  [][] 
  []
 
-[8] [9] [10] [11] (./PP1_densita copia.aux)
+[9] [10] [11] [12] (./PP1_densita copia.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -734,10 +750,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15099 strings out of 493014
- 295811 string characters out of 6133352
- 338205 words of memory out of 5000000
- 18491 multiletter control sequences out of 15000+600000
+ 15108 strings out of 493014
+ 295944 string characters out of 6133352
+ 340275 words of memory out of 5000000
+ 18500 multiletter control sequences out of 15000+600000
  15754 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,42p,10505b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -755,13 +771,16 @@ exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (11 pages, 458095 bytes).
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "PP1_densita copia.pdf" (12 pages, 488802 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  12 words of extra memory for PDF output out of 10000 (max. 10000000)
 
