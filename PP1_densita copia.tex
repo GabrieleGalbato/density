@@ -152,7 +152,7 @@ Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate c
 Nella tabella~\ref{tab:riepilogo_cilindro9_A} vengono invece riportati anche i valori calcolati di varianza ($\sigma^2$), deviazione standard ($\sigma$) e il massimo e il minimo valore ottenuti nella misurazione. \\
 Dopo aver effettuato tutte le misure necessarie, ossia diametro e massa di ogni cilindro, siamo in grado di calcolare la densità relativa ad ogni misura attraverso l'equazione
 \begin{equation}\label{eq:densita}
-	 \rho = \frac{m}{\pi\cdot(\frac{D}{10})^2\cdot\frac{h}{10}}
+	 \rho = \frac{m}{\frac{\pi}{4}\cdot(\frac{D}{10})^2\cdot\frac{h}{10}}
 \end{equation} che restituisce la densità in $\SI{}{g/cm^3}$, ottenendo i dati riportati nella tabella \ref{tab:densita_1}. Di queste 30 misure di densità possiamo ricavarne media ($\bar{\rho}$) e deviazione standard ($\sigma$), in particolare:
 \[
 	\bar{\rho} = \qquad \sigma = \;.
@@ -172,13 +172,13 @@ Considerando che si tratta di cilindri approssimativamente regolari, il volume è
 \end{equation}
 dove si è aggiunta una terza variabile $z_0$. Espandendo in serie di Taylor intorno al punto medio possiamo propagare l'incertezza su $\rho$ come
 \begin{equation}\label{eq:sigma_V}
-	\sigma_T^2 =  \left( \left. \frac{\partial V}{\partial D^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{D^{*}}^2 + \left( \left. \frac{\partial V}{\partial h^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{h^{*}}^2 + \left( \left. \frac{\partial V}{\partial z_0^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_z_0^2
+	\sigma_T^2 =  \left( \left. \frac{\partial V}{\partial D^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{D^{*}}^2 + \left( \left. \frac{\partial V}{\partial h^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{h^{*}}^2 + \left( \left. \frac{\partial V}{\partial z_0^{*}} \right\vert_{\bar{V}} \right)^2 \sigma_{z_0^2}
 \end{equation} dove
 \begin{align*}
 	\frac{\partial V}{\partial D^{*}} &= \frac{\pi}{4} ( 2 D^{*}h^{*} - 2 D^{*} z_0 - 2 h^{*} z_0 + 2 z_0^2) \\
 	\frac{\partial V}{\partial h^{*}} &= \frac{\pi}{4} (D^{*2} + z_0^2 - 2 D^{*}z_0) \\
 	\frac{\partial V}{\partial z_0^{*}} &= \frac{\pi}{4} ( - D^{*2} + 2 z_0 h^{*} - 3 z_0^2 - 2d^{*}h^{*} + 4d^{*}z_0)
-\end{align*} e $\sigma_{D^{*}}, \sigma_{h^{*}}, \sigma_z_0$ sono le deviazioni standard delle misure nella tabella \ref{tab:cilindro9_A}. L'incertezza finale sul volume è quindi
+\end{align*} e $\sigma_{D^{*}}, \sigma_{h^{*}}, \sigma_{z_0}$ sono le deviazioni standard delle misure nella tabella \ref{tab:cilindro9_A}. L'incertezza finale sul volume è quindi
 \begin{equation}\label{eq:sigma_V_finale}
 	\sigma_V = X.
 \end{equation} Riprendendo adesso l'equazione (\ref{eq:densita_gen}) essendo le variabili scorrelate possiamo utilizzare la formula di propagazione dell'incertezza su funzioni monomie:
@@ -263,7 +263,7 @@ Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \
 \end{enumerate}
 I dati sono riportati nella tabella~\ref{tab:campioniA}; poiché altezza e diametro sono stati misurati in \SI{}{mm}, e volendo esprimere la densità nell'unità di misura \SI{}{[g/cm^3]}, la calcoliamo con l'equazione:
 	\[
-	\rho = \frac{m}{\pi\cdot(\frac{D}{10})^2\cdot\frac{h}{10}},
+	\rho = \frac{m}{\frac{\pi}{4}\cdot(\frac{D}{10})^2\cdot\frac{h}{10}},
 	\]
 dove indichiamo con $m$ la massa in \SI{}{g}, con $D$ il diametro in \SI{}{mm} e con $h$ l'altezza in \SI{}{mm}. 
 %calcolo incertezza sulla densità
