@@ -4,7 +4,7 @@
 \usepackage[latin1]{inputenc} 
 \usepackage[italian]{babel}
 \usepackage{siunitx} %Inserisce automaticamente i dati con le unità di misura correttamente formattate del SI (utilizzo: \SI{0.82}{m^2}, in generale \SI{misura con il punto decimale}{unità di misura})
-\sisetup{output-decimal-marker = {,}, separate-uncertainty = true, input-uncertainty-signs = \pm} %per usare SI con la virgola decimale
+\sisetup{output-decimal-marker = {,}, separate-uncertainty = true, input-uncertainty-signs = \pm, detect-weight=true, detect-family=true} %per usare SI con la virgola decimale
 \usepackage{listings} %Per citare codice informatico formattandolo correttamente
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -55,9 +55,9 @@ In questa esperienza ci proponiamo di compiere misure di densità di diversi camp
 In questa relazione verranno usate le seguenti convenzioni:
 \begin{enumerate}
 	\item sarà usata la virgola [ $,$ ] come separatore decimale;
-	\item l'approssimazione decimale della cifra $5$ sarà fatta controllando, ove possibile, la cifra successiva (in ordine di lettura) al 5, in particolare se la cifra è compresa tra $0$ e $4$ (compresi) l'arrotondamento avverrà per difetto (es. $0,153 \rightarrow 0,1$), se la cifra è invece compresa tra $5$ e $9$ l'arrotondamento sarà per eccesso (es. $0,156 \rightarrow 0,2$), se non è possibile controllare la cifra successiva al 5 l'arrotondamento sarà fatto per difetto;
+	\item l'approssimazione decimale della cifra $5$ sarà fatta per eccesso;
 	\item al fine di migliorare la qualità dell'elaborazione dei dati, ogni grafico/istogramma prodotto a mano su carta millimetrata sarà riportato insieme al suo equivalente prodotto attraverso un software di analisi dati\footnote{In questo contesto i dati sono stati elaborati con il software di analisi \emph{R}.};
-	\item tutti i conti e i risultati parziali saranno presentati senza tenere cura delle cifre significative, i risultati finali saranno invece presentati correttamente nella sezione \ref{sec:c_finali}.
+	\item tutti i conti e i risultati parziali saranno presentati senza tenere cura delle cifre significative, i risultati finali saranno invece presentati correttamente.
 \end{enumerate}
 Inoltre, si farà riferimento alle seguenti formule:
 \begin{enumerate}
@@ -74,7 +74,6 @@ Inoltre, si farà riferimento alle seguenti formule:
 			\sigma = \sqrt{\sigma^2}.
 		\end{equation}	
 \end{enumerate}
-	%______________________> controllare meglio le convenzioni
 
 \section{Scopo e descrizione dell'esperienza}
 L'esperienza si sviluppa secondo 5 operazioni sperimentali:
@@ -91,8 +90,8 @@ L'esperienza si sviluppa secondo 5 operazioni sperimentali:
 \label{subsec:strumenti}
 \begin{itemize}
 \item Bilancia di precisione [risoluzione \SI{0,001}{g}, incertezza \SI{0,0003}{g}, portata \SI{7500}{g}];
-\item Calibro a nonio ventesimale [divisione \SI{0,05}{mm}, incertezza \SI{0,05}{mm}];
-\item Calibro Palmer [divisione \SI{0,01}{mm}, incertezza \SI{0,001}{mm}];
+\item Calibro a nonio ventesimale [divisione \SI{0,05}{mm}, incertezza \SI{0,05}{mm}, portata \SI{20}{cm}];
+\item Calibro Palmer [divisione \SI{0,01}{mm}, incertezza \SI{0,001}{mm}, portata \SI{25}{mm}];
 \item Provetta graduata [divisione \SI{2}{mL}, incertezza \SI{0,5}{mL}];
 \end{itemize}
 \subsection{Campioni}
@@ -298,20 +297,49 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 %determinazione del materiale di cui è costituito il campione
 
 \subsection{Misura della densità dei campioni A con metodo grafico}
-Adottiamo ora un altro metodo per determinare la densità dei campioni \textbf{A}, consistente nella misura del volume tramite una provetta graduata e la rappresentazione delle misure di massa e volume su un grafico, da cui ricaviamo la migliore retta di fit, il cui coefficiente angolare sarà legato alla densità dei campioni. La procedura seguita consiste in:
-\begin{enumerate}
-\item suddivisione dei $30$ campioni del gruppo \textbf{A} in $10$ sottogruppi da $3$, e numerazione degli stessi con un numero ordinale (I, II, \dots, IX, X);
-\item misura in modo integrale della massa dei sottogruppi, ovvero misura della massa del sottogruppo I, dei sottogruppi I e II, dei sottogruppi I, II e III, \dots, dei sottogruppi I, II, \dots, X;
-\item riempimento con acqua della provetta graduata e misura del livello raggiunto;
-\item inserimento progressivo dei sottogruppi nello stesso ordine con cui ne è stata misurata la massa. Per ciascuno di essi, misura del livello raggiunto dall'acqua, prestando attenzione alla presenza del menisco (si sceglie di prendere come riferimento il punto più basso dello stesso);
-\item rappresentazione sul grafico~\ref{fig:grafico_campioniA_manuale}, con ascissa la massa e ordinata il volume, dei punti corrispondenti alle misure effettuate con relative incertezze;
-\item estrazione della retta migliore che approssima l'andamento dei punti, stima dell'incertezza;
-\item stima del coefficiente angolare della retta, il cui inverso è pari alla densità dei campioni.
-\end{enumerate}
-I dati ottenuti sono riportati nella tabella~\ref{tab:campioniA_metodografico}, e nel già citato grafico~\ref{fig:grafico_campioniA}. Per confronto con quanto realizzato a mano in laboratorio, si riporta il grafico~\ref{fig:grafico_campioniA_pc} generato con R in un secondo momento.
-%stima dell'intervallo per la densità e relativa incertezza
-%confronto della densità ottenuta e dell'incertezza con i metodi precedenti
+Adottiamo ora un altro metodo per determinare la densità dei campioni \textbf{A}, suddividendoli in 10 gruppi di cui misuriamo in modo integrale massa e volume, quest'ultimo mediante la variazione del livello di acqua in una provetta graduata. 
 
+Rappresentando poi i dati su di un grafico, individuiamo la migliore retta che li approssima, il cui coefficiente angolare è legato alla densità dei campioni stessi.
+
+I dati ottenuti sono riportati nella tabella~\ref{tab:provetta}, e nel grafico~\ref{fig:grafico_campioniA}. Per confronto con quanto realizzato a mano in laboratorio, si riporta il grafico~\ref{fig:grafico_campioniA_pc} generato con R in un secondo momento. 
+
+Il coefficiente angolare della retta che approssima meglio i dati è
+	\[
+	m = \frac{V_2-V_1}{m_2-m_1}
+	\]
+dove i punti sono stati scelti sulla retta e non sono dati sperimentali, in quanto la retta ne tiene già conto nel complesso. Sono stati scelti quindi i valori
+	\[
+	m_1 = \SI{14,000}{g}, \qquad V_1 = \SI{5,0}{mL};
+	\] \[
+	m_2 = \SI{149,000}{g}, \qquad V_2 = \SI{55,0}{mL}.
+	\]
+Poiché la densità si ottiene dal rapporto
+	\[
+	\rho = \frac{m}{V},
+	\]
+l'inverso del coefficiente angolare della retta sarà pari alla nostra stima della densità con metodo grafico:
+	\[
+	\rho = \frac{149,000-14,000}{55,0-5,0}\SI{}{\frac{g}{mL}} = \SI{2,700}{\frac{g}{mL}};
+	\]
+Per propagare l'errore su tale valore, dunque, sommiamo in quadratura gli errori relativi di massa e volume:
+	\[
+	\frac{\sigma_\rho}{\rho}=\sqrt{\Big(\frac{\sigma_{\Delta m}}{\Delta m}\Big)^2+\Big(\frac{\sigma_{\Delta V}}{\Delta V}\Big)^2}
+	\]
+Dove gli errori assoluti su massa e volume sono ottenuti propagando l'incertezza sulla differenza dei valori finale e iniziale
+	\[
+	\sigma_{\Delta V}=\sqrt{2\sigma_V}=\SI{0,7}{mL} \qquad \text{ricordando che $\sigma_V=\SI{0,5}{mL}$}
+	\] \[
+	\sigma_{\Delta m}=\sqrt{2\sigma_m}=\SI{5,7e-4}{g} \qquad \text{ricordando che $\sigma_m=\SI{0,0004}{g}$};
+	\]
+Perciò 
+	\[
+	\frac{\sigma_\rho}{\rho} = 0,014 \Rightarrow \sigma_\rho = \SI{0,038}{\frac{g}{mL}}.
+	\]
+La stima della densità con metodo grafico è dunque
+	\[
+	\boxed{\textbf{{\SI{2,70 \pm 0,04}{\frac{g}{mL}} = \SI{2,70 \pm 0,04}{\frac{g}{cm^3}}}}}.
+	\]
+É evidente che l'incertezza su tale stima, che è pari all'$1,5\%$, sia maggiore rispetto a quella ottenuta con i metodi precedenti. Riteniamo che questo sia dovuto alla minore precisione nella misura del volume ottenuta attraverso la variazione del livello di acqua nella provetta rispetto al calcolo indiretto misurando le dimensioni con il più preciso calibro Palmer.
 
 \section{Considerazioni finali}\label{sec:c_finali}
 %indicare le sorgenti di errore e come contribuiscono alle incertezze di tipo A e di tipo B
@@ -322,7 +350,7 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:campioniA_metodografico}, 
 \caption{Singole misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sui 30 cilindri. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
 \label{tab:30_cilindri}
 \centering
-\begin{tabular}{rrrr}
+\begin{tabular}{cccc}
   \hline
  & Altezza-Palmer(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
   \hline
