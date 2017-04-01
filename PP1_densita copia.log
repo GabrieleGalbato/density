@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  1 APR 2017 12:18
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.22)  1 APR 2017 11:39
->>>>>>> origin/master
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  1 APR 2017 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,17 +664,12 @@ png>])
 \openout4 = `"PP1_densita copia.lot"'.
 
  [2]
-<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
-=======
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
->>>>>>> origin/master
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-<<<<<<< HEAD
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
  [3] [4] [5]
 
@@ -686,88 +677,59 @@ LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 155.
 
 
 [6]
-Overfull \hbox (77.02858pt too wide) in paragraph at lines 199--237
+Overfull \hbox (77.0285pt too wide) in paragraph at lines 199--236
  [][] 
  []
 
 
-Overfull \hbox (5.66753pt too wide) in paragraph at lines 243--253
-=======
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
- [3] [4] [5]
-
-LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 156.
-
-
-[6]
-Overfull \hbox (77.0285pt too wide) in paragraph at lines 200--237
->>>>>>> origin/master
- [][] 
- []
-
-
-LaTeX Warning: Reference `tab:campioniA' on page 7 undefined on input line 263.
+LaTeX Warning: Reference `tab:campioniA' on page 7 undefined on input line 262.
 
 
 [7]
 
 LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 8 undefined on inpu
-t line 269.
+t line 268.
 
 
 LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 8 undefined on input li
-ne 269.
+ne 268.
 
 
-LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 280
+LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 279
 .
 
 
-LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 294
+LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 293
 .
 
 [8]
-<<<<<<< HEAD
-=======
-
-LaTeX Warning: Reference `fig:grafico_campioniA_manuale' on page 9 undefined on
- input line 306.
->>>>>>> origin/master
 
 LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
-ine 304.
+ine 303.
 
-<<<<<<< HEAD
-=======
-LaTeX Warning: Reference `tab:campioniA_metodografico' on page 9 undefined on i
-nput line 310.
->>>>>>> origin/master
+Package epstopdf Info: Source file: <graph.eps>
+(epstopdf)                    date: 2017-03-30 17:43:16
+(epstopdf)                    size: 5922 bytes
+(epstopdf)             Output file: <graph-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-01 12:34:33
+(epstopdf)                    size: 12798 bytes
+(epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
+ graph.eps>
+(epstopdf)             \includegraphics on input line 346.
+Package epstopdf Info: Output file is already uptodate.
+<graph-eps-converted-to.pdf, id=54, 505.89pt x 505.89pt>
+File: graph-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 9 undefined on inpu
-t line 304.
-
-<<<<<<< HEAD
-[9]
-Overfull \hbox (9.52846pt too wide) in paragraph at lines 397--415
+<use graph-eps-converted-to.pdf>
+Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 346.
+(pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
+ [9]
+Overfull \hbox (9.5284pt too wide) in paragraph at lines 402--420
  [][] 
  []
 
-[10] [11] [12] [13] [14] [15] (./PP1_densita copia.aux)
-=======
-LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
-ine 310.
-
-
-LaTeX Warning: Reference `fig:grafico_campioniA_pc' on page 9 undefined on inpu
-t line 310.
-
-
-Overfull \hbox (9.5284pt too wide) in paragraph at lines 368--386
- [][] 
- []
-
-[9] [10] [11] [12] [13] [14] (./PP1_densita copia.aux)
->>>>>>> origin/master
+[10 <./graph-eps-converted-to.pdf>] [11] [12] [13] [14] [15]
+(./PP1_densita copia.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -777,25 +739,16 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 15126 strings out of 493014
- 296110 string characters out of 6133351
- 349305 words of memory out of 5000000
- 18510 multiletter control sequences out of 15000+600000
+ 15132 strings out of 493014
+ 296246 string characters out of 6133351
+ 347314 words of memory out of 5000000
+ 18514 multiletter control sequences out of 15000+600000
  18203 words of font info for 66 fonts, out of 8000000 for 9000
-=======
- 15112 strings out of 493014
- 296016 string characters out of 6133351
- 350311 words of memory out of 5000000
- 18504 multiletter control sequences out of 15000+600000
- 15754 words of font info for 58 fonts, out of 8000000 for 9000
->>>>>>> origin/master
  1141 hyphenation exceptions out of 8191
  38i,13n,42p,10545b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<<<<<<< HEAD
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
@@ -817,35 +770,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (15 pages, 524158 bytes).
+Output written on "PP1_densita copia.pdf" (15 pages, 535231 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
-=======
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (14 pages, 499972 bytes).
-PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
->>>>>>> origin/master
+ 166 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 12 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
