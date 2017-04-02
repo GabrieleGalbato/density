@@ -163,14 +163,14 @@ Dopo aver effettuato tutte le misure necessarie, ossia altezza, diametro e massa
 \end{equation}
 dove con $\sigma$ si intende la deviazione standard sulle trenta misure, mentre $u_B$ è la media delle incertezze propagate su ciascuna misura di densità, calcolate con la formula
 \begin{equation}\label{eq:ub_A}
-	u_B = \bar{\rho} \sqrt{\left( \frac{\sigma_m}{\bar{m}} \right)^2 + \left(\frac{\sigma_V}{\bar{V}} \right)^2}
+	u_B = \rho \sqrt{\left( \frac{\sigma_m}{m} \right)^2 + \left(\frac{\sigma_V}{V} \right)^2}
 \end{equation}
 dove $\sigma_m$ e $\sigma_V$ sono le incertezze sulla massa e sul volume, la prima è data da
 \begin{equation}\label{eq:sigma_m_A}
 	\sigma_m = \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_B(m)^2}
 \end{equation} dove $\sigma$ è la deviazione sulle trenta misure e $u_B(m)$ l'incertezza strumentale sulla bilancia; l'incertezza sul volume è invece data da
 \begin{equation}\label{eq:sigma_V_A}
-	\sigma_V = \left. \frac{\partial V}{\partial D}\right\vert^2_{(D, h, \bar{z_0})}\sigma_D^2 + \left. \frac{\partial V}{\partial h}\right\vert^2_{(D, h, \bar{z_0})}\sigma_h^2 + \left. \frac{\partial V}{\partial \bar{z_0}}\right\vert^2_{(D, h, \bar{z_0})}\sigma_{\bar{z_0}}^2
+	\sigma_V^2 = \left. \frac{\partial V}{\partial D}\right\vert^2_{(D, h, \bar{z_0})}\sigma_D^2 + \left. \frac{\partial V}{\partial h}\right\vert^2_{(D, h, \bar{z_0})}\sigma_h^2 + \left. \frac{\partial V}{\partial \bar{z_0}}\right\vert^2_{(D, h, \bar{z_0})}\sigma_{\bar{z_0}}^2
 \end{equation}
 dove intendiamo con $\sigma_D, \sigma_h, \sigma_{\bar{z_0}}$ le incertezze rispettivamente su diametro, altezza e offset, con $D$ e $h$ intendiamo i valori misurati di diametro e di altezza (quindi senza la correzione dell'offset) su ogni misura e con $\bar{z_0}$ l'offset medio; scrivendo il volume in funzione dei valori misurati di diametro e di altezza (misurati in \SI{}{[mm]}) e del valore dell'offset, in modo da rendere le misure scorrelate, e derivando parzialmente otteniamo
 \begin{align}\label{eq:partial_V_A}
@@ -187,9 +187,9 @@ applicando quindi (\ref{eq:sigma_density}) otteniamo un'incertezza
 	\sigma_T = \SI{0,0044}{g/cm^3}
 \end{equation}
 da cui la densità attesa del campione \textbf{A-9} 
-\begin{equation}\label{eq:density_A}
+\[
 	\boxed{\textbf{$\rho$ = {\SI{2,710 \pm 0,004}{\frac{g}{cm^3}}}}}.
-\end{equation}
+\]
 Confrontando il risultato ottenuto con una lista di densità note e sfruttando la nostra \emph{prior} per escluderne una parte, concludiamo che il cilindro \textbf{A-9} è fatto di \emph{alluminio} ($\rho = \SI{2,70}{g/cm^3}$).
 %presentazione della media con relativa incertezza
 %qualifica delle sorgenti di errore	
@@ -198,41 +198,41 @@ Confrontando il risultato ottenuto con una lista di densità note e sfruttando la
 \caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
 \label{tab:cilindro9_A}
 \centering
-\begin{tabular}{ccccc}
+\begin{tabular}{cccc}
   \hline
- & Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
+ Altezza-Palmer(mm) & Altezza-nonio(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
+  ($\pm$0,001) & ($\pm$0,05) & ($\pm$0,001) & ($\pm$0,0003) \\ 
   \hline
-  Incertezza: & 0,001 & 0,05 & 0,001 & 0,0003 \\[0.3cm]
-  1 & 20,018 & 20,15 & 11,975 & 6,1070 \\ 
-  2 & 20,021 & 20,05 & 11,985 & 6,1080 \\ 
-  3 & 20,019 & 20,10 & 12,018 & 6,1070 \\ 
-  4 & 20,020 & 20,10 & 11,974 & 6,1070 \\ 
-  5 & 20,019 & 20,10 & 11,983 & 6,1080 \\ 
-  6 & 20,011 & 20,05 & 11,985 & 6,1080 \\ 
-  7 & 20,021 & 20,10 & 11,978 & 6,1050 \\ 
-  8 & 20,019 & 20,10 & 11,979 & 6,1080 \\ 
-  9 & 20,015 & 20,10 & 11,986 & 6,1070 \\ 
-  10 & 20,011 & 20,15 & 11,980 & 6,1090 \\ 
-  11 & 20,011 & 20,10 & 11,982 & 6,1090 \\ 
-  12 & 20,015 & 20,05 & 11,979 & 6,1090 \\ 
-  13 & 20,011 & 20,05 & 11,989 & 6,1080 \\ 
-  14 & 20,015 & 20,10 & 11,990 & 6,1090 \\ 
-  15 & 20,020 & 20,05 & 11,981 & 6,1090 \\ 
-  16 & 20,012 & 20,05 & 11,982 & 6,1080 \\ 
-  17 & 20,009 & 20,05 & 11,978 & 6,1070 \\ 
-  18 & 20,015 & 20,10 & 11,984 & 6,1090 \\ 
-  19 & 20,015 & 20,10 & 11,980 & 6,1090 \\ 
-  20 & 20,019 & 20,05 & 11,971 & 6,1080 \\ 
-  21 & 20,025 & 20,05 & 11,989 & 6,1090 \\ 
-  22 & 20,019 & 20,05 & 11,984 & 6,1080 \\ 
-  23 & 20,020 & 20,10 & 11,980 & 6,1070 \\ 
-  24 & 20,010 & 20,10 & 11,991 & 6,1080 \\ 
-  25 & 20,010 & 20,10 & 11,980 & 6,1070 \\ 
-  26 & 20,021 & 20,05 & 11,975 & 6,1080 \\ 
-  27 & 20,020 & 20,10 & 11,992 & 6,1090 \\ 
-  28 & 20,025 & 20,10 & 11,981 & 6,1100 \\ 
-  29 & 20,010 & 20,10 & 11,973 & 6,1080 \\ 
-  30 & 20,020 & 20,15 & 11,978 & 6,1080 \\ 
+  20,018 & 20,15 & 11,975 & 6,1070 \\ 
+  20,021 & 20,05 & 11,985 & 6,1080 \\ 
+  20,019 & 20,10 & 12,018 & 6,1070 \\ 
+  20,020 & 20,10 & 11,974 & 6,1070 \\ 
+  20,019 & 20,10 & 11,983 & 6,1080 \\ 
+  20,011 & 20,05 & 11,985 & 6,1080 \\ 
+  20,021 & 20,10 & 11,978 & 6,1050 \\ 
+  20,019 & 20,10 & 11,979 & 6,1080 \\ 
+  20,015 & 20,10 & 11,986 & 6,1070 \\ 
+  20,011 & 20,15 & 11,980 & 6,1090 \\ 
+  20,011 & 20,10 & 11,982 & 6,1090 \\ 
+  20,015 & 20,05 & 11,979 & 6,1090 \\ 
+  20,011 & 20,05 & 11,989 & 6,1080 \\ 
+  20,015 & 20,10 & 11,990 & 6,1090 \\ 
+  20,020 & 20,05 & 11,981 & 6,1090 \\ 
+  20,012 & 20,05 & 11,982 & 6,1080 \\ 
+  20,009 & 20,05 & 11,978 & 6,1070 \\ 
+  20,015 & 20,10 & 11,984 & 6,1090 \\ 
+  20,015 & 20,10 & 11,980 & 6,1090 \\ 
+  20,019 & 20,05 & 11,971 & 6,1080 \\ 
+  20,025 & 20,05 & 11,989 & 6,1090 \\ 
+  20,019 & 20,05 & 11,984 & 6,1080 \\ 
+  20,020 & 20,10 & 11,980 & 6,1070 \\ 
+  20,010 & 20,10 & 11,991 & 6,1080 \\ 
+  20,010 & 20,10 & 11,980 & 6,1070 \\ 
+  20,021 & 20,05 & 11,975 & 6,1080 \\ 
+  20,020 & 20,10 & 11,992 & 6,1090 \\ 
+  20,025 & 20,10 & 11,981 & 6,1100 \\ 
+  20,010 & 20,10 & 11,973 & 6,1080 \\ 
+  20,020 & 20,15 & 11,978 & 6,1080 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -261,7 +261,7 @@ Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \
 \item misura della massa di ogni cilindro con la bilancia di precisione;
 \item calcolo della densità di ogni campione.
 \end{enumerate}
-I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato, attraverso l'equazione (\ref{eq:densita}) è possibile da essi calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}, poiché poi i campioni avevano dimensioni diverse è insensato sintetizzare i valori del volume con media e deviazione standard, essendo composti dallo stesso materiale è utile invece farlo per la densità, ottenendo i valori riportati nella tabella \ref{tab:vol_rho_global}. \\
+I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato, attraverso l'equazione (\ref{eq:densita}) è possibile da essi calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}, i valori della densità sono sintetizzati nella tabella \ref{tab:vol_rho_global}. \\
 Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta campioni, adottiamo gli stessi calcoli discussi nella sezione \ref{subsec:singolo_campione} ottenendo, come ha senso che sia, una propagazione media delle incertezze sulla densità data da
 \begin{equation}\label{eq:uB_trenta}
 	u_B = \SI{0,0043}{g/cm^3}
@@ -280,7 +280,25 @@ Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilind
 \item misura unica del diametro con il calibro Palmer (in quanto più accurato del nonio);
 \item misura unica della massa con la bilancia di precisione.
 \end{enumerate}
-I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}.
+I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}. L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
+\begin{equation}\label{eq:vol_B}
+	V = \frac{\pi}{4000}(D - \bar{z_0})^2h
+\end{equation} in cui si è usata la stessa notazione di sopra, da (\ref{eq:vol_B}) si ricavano le derivate parziali
+\begin{align}\label{eq:partial_B}
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh - 2\bar{z_0}h) \\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
+	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000}(2\bar{z_0}h - 2Dh).
+\end{align}
+Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni standard ricavate nella sezione \ref{subsec:singolo_campione} dato che avevamo misurato l'altezza sia col nonio che col Palmer, applicandole alla singola misura e non ad una media. L'incertezza sulla densità è data dalla formula
+\begin{equation}\label{eq:sigma_rho_B}
+	\sigma_T = \rho \sqrt{\left(\frac{\sigma_V}{V} \right)^2 + \left(\frac{\sigma_m}{m}\right)^2}
+\end{equation} dove $\sigma_m$ è la semplice somma in quadratura della deviazione standard calcolata nella sezione \ref{subsec:singolo_campione} con l'incertezza strumentale della bilancia, mentre $\sigma_V$ è data dalla formula (\ref{eq:sigma_V_A}) dove le derivate parziali sono quelle di (\ref{eq:partial_B}). Svolti i conti, la formula (\ref{eq:sigma_rho_B}) permette di calcolare l'incertezza
+\[
+	\sigma_T = \SI{0,0041}{g/cm^3}
+\] da cui la stima per la densità del campione \textbf{B}:
+\[
+	\boxed{\textbf{$\rho$ = {\SI{2,702 \pm 0,004}{\frac{g}{cm^3}}}}}
+\] nuovamente in piena compatibilità con l'\emph{alluminio}.
 %presentazione della densità con calcolo dell'incertezza
 %commento sulla compatibilità del materiale del gruppo A e del campione B
 %commento sull'incertezza ottenuta rispetto al metodo utilizzato in 3.2
