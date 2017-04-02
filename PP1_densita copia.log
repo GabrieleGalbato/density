@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,15 +690,16 @@ Overfull \hbox (77.0285pt too wide) in paragraph at lines 200--237
 LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 282
 .
 
-
-LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 296
-.
-
 [8]
 
-LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
-ine 306.
+LaTeX Warning: Reference `tab:cilindro_C' on page 9 undefined on input line 314
+.
 
+
+LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
+ine 324.
+
+[9]
 Package epstopdf Info: Source file: <graph.eps>
 (epstopdf)                    date: 2017-04-02 10:58:50
 (epstopdf)                    size: 5565 bytes
@@ -707,20 +708,20 @@ Package epstopdf Info: Source file: <graph.eps>
 (epstopdf)                    size: 10610 bytes
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-<graph-eps-converted-to.pdf, id=55, 505.89pt x 505.89pt>
+ <graph-eps-converted-to.pdf, id=58, 505.89pt x 505.89pt>
 File: graph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graph-eps-converted-to.pdf>
-Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 349.
+Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 367.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
- [9]
-Overfull \hbox (12.86172pt too wide) in paragraph at lines 355--379
+
+Overfull \hbox (12.86172pt too wide) in paragraph at lines 373--397
  [] 
  []
 
-[10 <./graph-eps-converted-to.pdf>] [11] [12] [13] [14] [15]
+[10] [11 <./graph-eps-converted-to.pdf>] [12] [13] [14] [15] [16]
 (./PP1_densita copia.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -729,15 +730,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15187 strings out of 493014
- 297139 string characters out of 6133352
- 350404 words of memory out of 5000000
- 18565 multiletter control sequences out of 15000+600000
+ 15189 strings out of 493014
+ 297165 string characters out of 6133352
+ 354424 words of memory out of 5000000
+ 18567 multiletter control sequences out of 15000+600000
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,42p,10545b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -764,10 +762,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (15 pages, 530867 bytes).
+Output written on "PP1_densita copia.pdf" (16 pages, 533438 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
