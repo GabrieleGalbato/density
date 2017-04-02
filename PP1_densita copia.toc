@@ -8,8 +8,17 @@
 \contentsline {section}{\numberline {3}Sequenza Operazioni Sperimentali}{4}
 \contentsline {subsection}{\numberline {3.1}Verifica degli strumenti}{4}
 \contentsline {subsection}{\numberline {3.2}Misura della densit\`a di un singolo campione}{4}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.3}Misura della densit\`a dei campioni A}{9}
 \contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{13}
 \contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{14}
 \contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{16}
 \contentsline {section}{\numberline {4}Considerazioni finali}{19}
+=======
+\contentsline {paragraph}{Scelta tra calibro ventesimale e calibro Palmer}{5}
+\contentsline {subsection}{\numberline {3.3}Misura della densit\`a dei campioni A}{9}
+\contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{12}
+\contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{13}
+\contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{15}
+\contentsline {section}{\numberline {4}Considerazioni finali}{16}
+>>>>>>> origin/master
