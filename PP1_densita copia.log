@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  1 APR 2017 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 10:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,15 +685,15 @@ Overfull \hbox (77.0285pt too wide) in paragraph at lines 199--236
 LaTeX Warning: Reference `tab:campioniA' on page 7 undefined on input line 262.
 
 
-[7]
 
-LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 8 undefined on inpu
+LaTeX Warning: Reference `fig:ist_campioniA_manual' on page 7 undefined on inpu
 t line 268.
 
 
-LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 8 undefined on input li
+LaTeX Warning: Reference `fig:ist_campioniA_pc' on page 7 undefined on input li
 ne 268.
 
+[7]
 
 LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 279
 .
@@ -702,33 +702,34 @@ LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 279
 LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 293
 .
 
-[8]
 
-LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
+LaTeX Warning: Reference `fig:grafico_campioniA' on page 8 undefined on input l
 ine 303.
 
+[8]
+
+LaTeX Warning: File `graph.eps' not found on input line 346.
+
 Package epstopdf Info: Source file: <graph.eps>
-(epstopdf)                    date: 2017-03-30 17:43:16
-(epstopdf)                    size: 5922 bytes
 (epstopdf)             Output file: <graph-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-01 12:34:33
+(epstopdf)                    date: 2017-04-01 18:22:02
 (epstopdf)                    size: 12798 bytes
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
 (epstopdf)             \includegraphics on input line 346.
 Package epstopdf Info: Output file is already uptodate.
-<graph-eps-converted-to.pdf, id=54, 505.89pt x 505.89pt>
+<graph-eps-converted-to.pdf, id=55, 505.89pt x 505.89pt>
 File: graph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graph-eps-converted-to.pdf>
 Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 346.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
- [9]
+
 Overfull \hbox (9.5284pt too wide) in paragraph at lines 402--420
  [][] 
  []
 
-[10 <./graph-eps-converted-to.pdf>] [11] [12] [13] [14] [15]
+[9] [10 <./graph-eps-converted-to.pdf>] [11] [12] [13] [14] [15]
 (./PP1_densita copia.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -739,10 +740,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15132 strings out of 493014
- 296246 string characters out of 6133351
- 347314 words of memory out of 5000000
- 18514 multiletter control sequences out of 15000+600000
+ 15133 strings out of 493014
+ 296266 string characters out of 6133352
+ 352322 words of memory out of 5000000
+ 18515 multiletter control sequences out of 15000+600000
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,42p,10545b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -764,16 +765,15 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (15 pages, 535231 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "PP1_densita copia.pdf" (15 pages, 527087 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
