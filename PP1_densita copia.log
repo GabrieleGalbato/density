@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,28 +676,24 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
  [3] [4] [5]
-
-LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 156.
-
-
 [6]
-Overfull \hbox (21.55627pt too wide) in paragraph at lines 200--237
+Overfull \hbox (21.55627pt too wide) in paragraph at lines 199--236
  [][] 
  []
 
 [7]
 
-LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 282
+LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 281
 .
 
 [8]
 
-LaTeX Warning: Reference `tab:cilindro_C' on page 9 undefined on input line 314
+LaTeX Warning: Reference `tab:cilindro_C' on page 9 undefined on input line 313
 .
 
 
 LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
-ine 324.
+ine 323.
 
 [9]
 Package epstopdf Info: Source file: <graph.eps>
@@ -708,16 +704,16 @@ Package epstopdf Info: Source file: <graph.eps>
 (epstopdf)                    size: 10610 bytes
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
  <graph-eps-converted-to.pdf, id=58, 505.89pt x 505.89pt>
 File: graph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graph-eps-converted-to.pdf>
-Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 367.
+Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 366.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 
-Overfull \hbox (12.86172pt too wide) in paragraph at lines 373--397
+Overfull \hbox (12.86172pt too wide) in paragraph at lines 372--396
  [] 
  []
 
@@ -732,10 +728,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15189 strings out of 493014
- 297165 string characters out of 6133352
- 352424 words of memory out of 5000000
- 18567 multiletter control sequences out of 15000+600000
+ 15188 strings out of 493014
+ 297150 string characters out of 6133352
+ 353424 words of memory out of 5000000
+ 18566 multiletter control sequences out of 15000+600000
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,42p,10545b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -762,7 +758,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (16 pages, 533015 bytes).
+Output written on "PP1_densita copia.pdf" (16 pages, 532605 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
