@@ -187,9 +187,9 @@ applicando quindi (\ref{eq:sigma_density}) otteniamo un'incertezza
 \end{equation}
 da cui la densità attesa del campione \textbf{A-9} 
 \begin{equation}\label{eq:density_A}
-	\boxed{\textbf{{\SI{2,710 \pm 0,004}{\frac{g}{cm^3}}}}}.
+	\boxed{\textbf{$\rho$ = {\SI{2,710 \pm 0,004}{\frac{g}{cm^3}}}}}.
 \end{equation}
-Confrontando il risultato ottenuto con una lista di densità note e sfruttando la nostra \emph{prior} per escluderne una parte, concludiamo che il cilindro \textbf{A-9} è fatto di \emph{alluminio}.
+Confrontando il risultato ottenuto con una lista di densità note e sfruttando la nostra \emph{prior} per escluderne una parte, concludiamo che il cilindro \textbf{A-9} è fatto di \emph{alluminio} ($\rho = \SI{2,70}{g/cm^3}$).
 %presentazione della media con relativa incertezza
 %qualifica delle sorgenti di errore	
 	
@@ -260,15 +260,17 @@ Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \
 \item misura della massa di ogni cilindro con la bilancia di precisione;
 \item calcolo della densità di ogni campione.
 \end{enumerate}
-I dati sono riportati nella tabella~\ref{tab:campioniA}; poiché altezza e diametro sono stati misurati in \SI{}{mm}, e volendo esprimere la densità nell'unità di misura \SI{}{[g/cm^3]}, la calcoliamo con l'equazione:
-	\[
-	\rho = \frac{m}{\frac{\pi}{4}\cdot(\frac{D}{10})^2\cdot\frac{h}{10}},
-	\]
-dove indichiamo con $m$ la massa in \SI{}{g}, con $D$ il diametro in \SI{}{mm} e con $h$ l'altezza in \SI{}{mm}. 
-%calcolo incertezza sulla densità
-Riportiamo quindi negli istogrammi~\ref{fig:ist_campioniA_manual} e \ref{fig:ist_campioniA_pc}, il primo disegnato a mano e il secondo generato con R, le frequenze con cui si ripetono i valori della densità per i campioni \textbf{A}.
-%commento sull'incertezza ottenuta rispetto a 3.2
-Concludiamo che il materiale di cui sono costituiti i campioni sia l'\textbf{alluminio}, in quanto la sua densità, $\rho_{\text{Al}} = \SI{2,70}{g/cm^3}$, è compatibile entro gli errori con il valore da noi ottenuto.
+I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato, attraverso l'equazione (\ref{eq:densita}) è possibile da essi calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}, poiché poi i campioni avevano dimensioni diverse è insensato sintetizzare i valori del volume con media e deviazione standard, essendo composti dallo stesso materiale è utile invece farlo per la densità, ottenendo i valori riportati nella tabella \ref{tab:vol_rho_global}. \\
+Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta campioni, adottiamo gli stessi calcoli discussi nella sezione \ref{subsec:singolo_campione} ottenendo, come ha senso che sia, una propagazione media delle incertezze sulla densità data da
+\begin{equation}\label{eq:uB_trenta}
+	u_B = \SI{0,0043}{g/cm^3}
+\end{equation} identica (nel limite dell'approssimazione), a quella calcolata nella sezione \ref{subsec:singolo_campione}\footnote{Il risultato ha senso se si ricorda che tale valore è la media delle propagazioni delle singole incertezze su massa, diametro e altezza: poiché queste misure sono state fatte con gli stessi strumenti e nelle stesse condizioni, e poiché le misure non discostano eccessivamente tra di loro, è naturale aspettarsi che le misure coerenti siano affette da incertezze (praticamente) uguali.}, da cui, utilizzando la relazione (\ref{eq:sigma_density}), si calcola l'incertezza sulla densità
+\begin{equation}\label{eq:sigmaT_trenta}
+	\sigma_T = \SI{0,0044}{g/cm^3}
+\end{equation} da cui la densità attesa dei trenta campioni
+\begin{equation}\label{eq:densita_trenta}
+	\boxed{\textbf{$\rho$ = {\SI{2,696 \pm 0,004}{\frac{g}{cm^3}}}}}
+\end{equation} che, come prima, è assolutamente compatibile con la densità dell'\emph{alluminio} (\SI{2,70}{g/cm^3}).
 
 \subsection{Misura della densità del campione B}
 Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. La procedura seguita per determinarne la densità è la seguente:

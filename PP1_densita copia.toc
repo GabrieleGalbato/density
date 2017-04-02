@@ -11,5 +11,5 @@
 \contentsline {subsection}{\numberline {3.3}Misura della densit\`a dei campioni A}{7}
 \contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{8}
 \contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{8}
-\contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{8}
-\contentsline {section}{\numberline {4}Considerazioni finali}{9}
+\contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{9}
+\contentsline {section}{\numberline {4}Considerazioni finali}{10}
