@@ -162,7 +162,7 @@ Dopo aver effettuato tutte le misure necessarie, ossia altezza, diametro e massa
 \end{equation}
 dove con $\sigma$ si intende la deviazione standard sulle trenta misure, mentre $u_B$ è la media delle incertezze propagate su ciascuna misura di densità, calcolate con la formula
 \begin{equation}\label{eq:ub_A}
-	u_B = \bar{\rho} \sqrt{\left( \frac{\sigma_m}{\bar{m}} \right)^2 + \left(\frac{\sigma_V}{\bar{V}} \right)^2}
+	u_B = \rho \sqrt{\left( \frac{\sigma_m}{m} \right)^2 + \left(\frac{\sigma_V}{V} \right)^2}
 \end{equation}
 dove $\sigma_m$ e $\sigma_V$ sono le incertezze sulla massa e sul volume, la prima è data da
 \begin{equation}\label{eq:sigma_m_A}
@@ -282,21 +282,21 @@ Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilind
 I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}. L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
 \begin{equation}\label{eq:vol_B}
 	V = \frac{\pi}{4000}(D - \bar{z_0})^2h
-\end{equation} in cui si è usata la stessa notazione di sopra, da (\ref{eq:vol_B}) le derivate parziali
+\end{equation} in cui si è usata la stessa notazione di sopra, da (\ref{eq:vol_B}) si ricavano le derivate parziali
 \begin{align}\label{eq:partial_B}
-	\frac{\partial V}{\partial D} &= \frac{pi}{4000}(2Dh - 2\bar{z_0}h) \\
-	\frac{\partial V}{\partial h} &= \frac{pi}{4000}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
-	\frac{\partial V}{\partial \bar{z_0}} &= \frac{pi}{4000}(2\bar{z_0}h - 2Dh).
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh - 2\bar{z_0}h) \\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
+	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000}(2\bar{z_0}h - 2Dh).
 \end{align}
 Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni standard ricavate nella sezione \ref{subsec:singolo_campione} dato che avevamo misurato l'altezza sia col nonio che col Palmer, applicandole alla singola misura e non ad una media. L'incertezza sulla densità è data dalla formula
 \begin{equation}\label{eq:sigma_rho_B}
 	\sigma_T = \rho \sqrt{\left(\frac{\sigma_V}{V} \right)^2 + \left(\frac{\sigma_m}{m}\right)^2}
 \end{equation} dove $\sigma_m$ è la semplice somma in quadratura della deviazione standard calcolata nella sezione \ref{subsec:singolo_campione} con l'incertezza strumentale della bilancia, mentre $\sigma_V$ è data dalla formula (\ref{eq:sigma_V_A}) dove le derivate parziali sono quelle di (\ref{eq:partial_B}). Svolti i conti, la formula (\ref{eq:sigma_rho_B}) permette di calcolare l'incertezza
 \[
-	\sigma_T = \SI{0,022}{g/cm^3}
+	\sigma_T = \SI{0,0041}{g/cm^3}
 \] da cui la stima per la densità del campione \textbf{B}:
 \[
-	\boxed{\textbf{$\rho$ = {\SI{2,702 \pm 0,002}{\frac{g}{cm^3}}}}}
+	\boxed{\textbf{$\rho$ = {\SI{2,702 \pm 0,004}{\frac{g}{cm^3}}}}}
 \] nuovamente in piena compatibilità con l'\emph{alluminio}.
 %presentazione della densità con calcolo dell'incertezza
 %commento sulla compatibilità del materiale del gruppo A e del campione B
