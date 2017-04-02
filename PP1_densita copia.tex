@@ -11,6 +11,7 @@
 \usepackage{epigraph}
 \usepackage{booktabs}	%tabelle migliorate
 \usepackage{tablefootnote}	%note a piè di pagina in tabella
+\usepackage{threeparttable} %tabella con note a piè di tabella
 \usepackage{caption}	%descrizione per figure
 \captionsetup{tableposition=top,figureposition=bottom,font=small} %setup descrizione
 
@@ -347,15 +348,16 @@ La stima della densità con metodo grafico è dunque
 \end{figure}
 
 \begin{table}
+\centering
+\begin{threeparttable}
 \caption{Misure della variazione del livello dell'acqua in una provetta graduata in seguito all'inserimento graduale di 10 gruppi di 3 cilindri.}
 \label{tab:provetta}
-\centering
 \begin{tabular}{cccc}
   \hline
  & Massa(g)& Volume $V$(ml) & Variazione volume $\Delta V$(ml)\\ 
   \hline
    Incertezza: & 0,0003 & 0,5 & 0,5 \\[0.1cm] 
-Condizione iniziale\tablefootnote{Equivale alla lettura del livello dell'acqua nella provetta prima che alcun campione venisse inserito.}: & 0,0000 & 115,0 & 0,0 \\[0.3cm] 
+Condizione iniziale\tnote{1} : & 0,0000 & 115,0 & 0,0 \\[0.3cm] 
   1 & 11,2620 & 119,0& 4,0 \\ 
   2 & 29,2920 & 126,0 & 11,0 \\ 
   3 & 44,0600 & 131,0 & 16,0 \\ 
@@ -368,6 +370,10 @@ Condizione iniziale\tablefootnote{Equivale alla lettura del livello dell'acqua n
   10 & 143,5400 & 168,0 & 53,0 \\
   \hline
 \end{tabular}
+\begin{tablenotes}
+\item[1] \scriptsize{Equivale alla lettura del livello dell'acqua nella provetta prima che alcun campione venisse inserito.}
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 
