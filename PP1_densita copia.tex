@@ -50,6 +50,7 @@ La densità è definita come il rapporto tra massa e volume, ed è una proprietà in
 In questa esperienza ci proponiamo di compiere misure di densità di diversi campioni, adottando diversi procedimenti operativi e al fine di determinare il materiale di cui è composto un campione incognito.
 \end{abstract}
 \vspace{0.5cm}
+\newpage
 \tableofcontents %Indice
 \listoftables %Indice delle tabelle
 \pagebreak
@@ -159,16 +160,16 @@ Dopo aver effettuato tutte le misure necessarie (sintetizzate nella tabella \ref
 	\bar{\rho} =\SI{2,7095}{g/cm^3} \qquad \sigma = \SI{0,004}{g/cm^3}.
 \] L'incertezza su questa media si stima come
 \begin{equation}\label{eq:sigma_density}
-	\sigma_T = \sqrt{\left( \frac{\sigma}{\sqrt{30}} \right)^2 + u_B^2}
+	\sigma_T = \sqrt{\left( \frac{\sigma}{\sqrt{30}} \right)^2 + u_\rho^2}
 \end{equation}
-dove con $\sigma$ si intende la deviazione standard sulle trenta misure, mentre $u_B$ è la media delle incertezze propagate su ciascuna misura di densità, calcolate con la formula
+dove con $\sigma$ si intende la deviazione standard sulle trenta misure, mentre $u_\rho$ è la media delle incertezze propagate su ciascuna misura di densità, calcolate con la formula
 \begin{equation}\label{eq:ub_A}
-	u_B = \rho \sqrt{\left( \frac{\sigma_m}{m} \right)^2 + \left(\frac{\sigma_V}{V} \right)^2}
+	u_\rho = \rho \sqrt{\left( \frac{\sigma_m}{m} \right)^2 + \left(\frac{\sigma_V}{V} \right)^2}
 \end{equation}
 dove $\sigma_m$ e $\sigma_V$ sono le incertezze sulla massa e sul volume, la prima è data da
 \begin{equation}\label{eq:sigma_m_A}
-	\sigma_m = \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_B(m)^2}
-\end{equation} dove $\sigma$ è la deviazione sulle trenta misure e $u_B(m)$ l'incertezza strumentale sulla bilancia; l'incertezza sul volume è invece data da
+	\sigma_m = \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_m^2}
+\end{equation} dove $\sigma$ è la deviazione sulle trenta misure e $u_m$ l'incertezza strumentale sulla bilancia; l'incertezza sul volume è invece data da
 \begin{equation}\label{eq:sigma_V_A}
 	\sigma_V^2 = \left. \frac{\partial V}{\partial D}\right\vert^2_{(D, h, \bar{z_0})}\sigma_D^2 + \left. \frac{\partial V}{\partial h}\right\vert^2_{(D, h, \bar{z_0})}\sigma_h^2 + \left. \frac{\partial V}{\partial \bar{z_0}}\right\vert^2_{(D, h, \bar{z_0})}\sigma_{\bar{z_0}}^2
 \end{equation}
@@ -327,7 +328,7 @@ Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \
 Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta campioni, adottiamo gli stessi calcoli discussi nella sezione \ref{subsec:singolo_campione} ottenendo, come ha senso che sia, una propagazione media delle incertezze sulla densità data da
 \begin{equation}\label{eq:uB_trenta}
 	u_B = \SI{0,0043}{g/cm^3}
-\end{equation} identica (nel limite dell'approssimazione), a quella calcolata nella sezione \ref{subsec:singolo_campione}\footnote{Il risultato ha senso se si ricorda che tale valore è la media delle propagazioni delle singole incertezze su massa, diametro e altezza: poiché queste misure sono state fatte con gli stessi strumenti e nelle stesse condizioni, e poiché le misure non si discostano eccessivamente tra di loro, è naturale aspettarsi che le misure coerenti siano affette da incertezze (praticamente) uguali.}, da cui, utilizzando la relazione (\ref{eq:sigma_density}), si calcola l'incertezza sulla densità
+\end{equation} identica\footnote{Il risultato ha senso se si ricorda che tale valore è la media delle propagazioni delle singole incertezze su massa, diametro e altezza: poiché queste misure sono state fatte con gli stessi strumenti e nelle stesse condizioni, e poiché le misure non si discostano eccessivamente tra di loro, è naturale aspettarsi che le misure coerenti siano affette da incertezze (praticamente) uguali.} (nel limite dell'approssimazione), a quella calcolata nella sezione \ref{subsec:singolo_campione}, da cui, utilizzando la relazione (\ref{eq:sigma_density}), si calcola l'incertezza sulla densità
 \begin{equation}\label{eq:sigmaT_trenta}
 	\sigma_T = \SI{0,0044}{g/cm^3}
 \end{equation} da cui la densità attesa dei trenta campioni
@@ -429,12 +430,25 @@ Incertezza: & 0,001 & 0,001 & 0,0003 \\ [0.1cm]
 %=========== CAMPIONE B ==========
 
 \subsection{Misura della densità del campione B}
-Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. Ne misuriamo l'altezza con il calibro a nonio, in quanto essa è fuori dalla portata del Palmer, dil diametro con il calibro Palmer e la massa con la bilancia di precisione. I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}. 
+Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. Ne misuriamo l'altezza con il calibro a nonio, in quanto essa è fuori dalla portata del Palmer, il diametro con il calibro Palmer e la massa con la bilancia di precisione. I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}. 
+
+\begin{table}[H]
+\caption{Dimensioni e massa del campione B}
+\label{tab:cilindro_B}
+\centering
+\begin{tabular}{rrl}
+\hline
+Altezza campione (h) & \SI{73,550 \pm 0,001}{} & \SI{}{mm} \\
+Diametro campione (D) & \SI{14,890 \pm 0,001}{} & \SI{}{mm} \\
+Massa campione (m) & \SI{34,612 \pm 0,0003}{} & \SI{}{g} \\
+\hline
+\end{tabular}
+\end{table}
 
 L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
 \begin{equation}\label{eq:vol_B}
 	V = \frac{\pi}{4000}(D - \bar{z_0})^2h
-\end{equation} in cui si è usata la stessa notazione di sopra, da (\ref{eq:vol_B}) si ricavano le derivate parziali
+\end{equation} in cui si è usata la stessa notazione di sopra. Da (\ref{eq:vol_B}) si ricavano le derivate parziali
 \begin{align}\label{eq:partial_B}
 	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh - 2\bar{z_0}h) \\
 	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
@@ -445,10 +459,10 @@ Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni sta
 	\sigma_T = \rho \sqrt{\left(\frac{\sigma_V}{V} \right)^2 + \left(\frac{\sigma_m}{m}\right)^2}
 \end{equation} dove $\sigma_m$ è la semplice somma in quadratura della deviazione standard calcolata nella sezione \ref{subsec:singolo_campione} con l'incertezza strumentale della bilancia, mentre $\sigma_V$ è data dalla formula (\ref{eq:sigma_V_A}) dove le derivate parziali sono quelle di (\ref{eq:partial_B}). Svolti i conti, la formula (\ref{eq:sigma_rho_B}) permette di calcolare l'incertezza
 \[
-	\sigma_T = \SI{0,00105}{g/cm^3}
+	\sigma_T = \SI{0,0038}{g/cm^3}
 \] da cui la stima per la densità del campione \textbf{B}:
 \[
-	\boxed{\textbf{$\rho$ = {\SI{2,70 \pm 0,01}{\frac{g}{cm^3}}}}}
+	\boxed{\textbf{$\rho$ = {\SI{2,702 \pm 0,004}{\frac{g}{cm^3}}}}}
 \] nuovamente in piena compatibilità con l'\emph{alluminio}.
 %presentazione della densità con calcolo dell'incertezza
 %commento sulla compatibilità del materiale del gruppo A e del campione B
@@ -457,7 +471,7 @@ Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni sta
 %======== CAMPIONE C =============
 
 \subsection{Misura della densità del campione C}
-Il campione \textbf{C} è un cilindro che presenta un foro in prossimità della base, che approssimiamo a sua volta come un cilindro di altezza pari al diametro del campione, e di cui calcoliamo il diametro con il calibro a nonio; misuriamo invece il diametro e l'altezza del campione con il calibro Palmer, e la massa con la bilancia di precisione. Indichiamo con $z_0$ l'offset del calibro Palmer.
+Il campione \textbf{C} è un cilindro che presenta un foro in prossimità della base, che approssimiamo a sua volta come un cilindro di altezza pari al diametro del campione, e di cui calcoliamo il diametro con il calibro a nonio; misuriamo invece il diametro e l'altezza del campione con il calibro Palmer, e la massa con la bilancia di precisione. Indichiamo con $\bar{z_0}$ il valore medio dell'offset del calibro Palmer.
 I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 
 \begin{table}[H]
@@ -465,12 +479,12 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 \label{tab:cilindro_C}
 \centering
 \begin{tabular}{rrl}
-\toprule
+\hline
 Altezza campione (h) & \SI{15,220 \pm 0,001}{} & \SI{}{mm} \\
 Diametro campione (D) & \SI{12,990 \pm 0,001}{} & \SI{}{mm} \\
 Diametro foro (d) & \SI{0,300 \pm 0,005}{} & \SI{}{cm} \\
 Massa campione (m) & \SI{16,0210 \pm 0,0003}{} & \SI{}{g} \\
-\bottomrule
+\hline
 \end{tabular}
 \end{table}
 
@@ -490,23 +504,23 @@ Propaghiamo ora l'incertezza su tale valore, tenendo conto delle seguenti incert
 	\begin{align*}
 	\sigma_D &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{1,85e-3}{mm} \\
 	\sigma_h &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{1,32e-3}{mm} \\
-	\sigma_{z_0} &= \sqrt{\Big(\frac{\sigma}{\sqrt{10}}\Big)^2+u_B^2} = \SI{1,52e-3}{mm} \\
+	\sigma_{\bar{z_0}} &= \sqrt{\Big(\frac{\sigma}{\sqrt{10}}\Big)^2+u_B^2} = \SI{1,52e-3}{mm} \\
 	\sigma_d &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{5,03e-3}{cm} = \SI{50,3e-3}{mm},
 	\end{align*}
 Esprimiamo d'ora in avanti il diametro del foro come $d = \SI{3,00 \pm 0,05}{mm}$, cambiando unità di misura per semplificare i calcoli. L'equazione per calcolare il volume netto del campione è 
 	\[
-	V_{\text{netto}} = \frac{\pi}{4000}\Big[(D-z_0)^2(h-z_0)-d^2(D-z_0)\Big],
+	V_{\text{netto}} = \frac{\pi}{4000}\Big[(D-\bar{z_0})^2(h-\bar{z_0})-d^2(D-\bar{z_0})\Big],
 	\]
 l'incertezza sul volume è dunque data da 
 	\[
-	\sigma_V = \left[\Bigg(\frac{\partial V}{\partial D}\bigg\vert_{(D,h,d,z_0)}\sigma_D\Bigg)^2 + \Bigg(\frac{\partial V}{\partial h}\bigg\vert_{(D,h,d,z_0)}\sigma_h\Bigg)^2 + \Bigg(\frac{\partial V}{\partial z_0}\bigg\vert_{(D,h,d,z_0)}\sigma_{z_0}\Bigg)^2 + \Bigg(\frac{\partial V}{\partial d}\bigg\vert_{(D,h,d,z_0)}\sigma_d\Bigg)^2\right]^{\frac{1}{2}},
+	\sigma_V = \left[\Bigg(\frac{\partial V}{\partial D}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_D\Bigg)^2 + \Bigg(\frac{\partial V}{\partial h}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_h\Bigg)^2 + \Bigg(\frac{\partial V}{\partial \bar{z_0}}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_{\bar{z_0}}\Bigg)^2 + \Bigg(\frac{\partial V}{\partial d}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_d\Bigg)^2\right]^{\frac{1}{2}},
 	\]
 in cui si ha 
 	\begin{align*}
-	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh-2Dz_0-2z_0h+2z_0^2-d^2) = \SI{0,303}{cm^2} \\
-	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2-2Dz_0+z_0^2) = \SI{0,132}{cm^2} \\
-	\frac{\partial V}{\partial z_0} &= \frac{\pi}{4000}(-D^2-2Dh+4Dz_0+2z_0h-3z_0^2+d^2) = \SI{-0,435}{cm^2} \\
-	\frac{\partial V}{\partial d} &= \frac{\pi}{4000}(-2dD+2dz_0) = \SI{-0,061}{cm^2};
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh-2D\bar{z_0}-2\bar{z_0}h+2\bar{z_0}^2-d^2) = \SI{0,303}{cm^2} \\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2-2D\bar{z_0}+\bar{z_0}^2) = \SI{0,132}{cm^2} \\
+	\frac{\partial V}{\partial z_0} &= \frac{\pi}{4000}(-D^2-2Dh+4D\bar{z_0}+2\bar{z_0}h-3\bar{z_0}^2+d^2) = \SI{-0,435}{cm^2} \\
+	\frac{\partial V}{\partial d} &= \frac{\pi}{4000}(-2dD+2d\bar{z_0}) = \SI{-0,061}{cm^2};
 	\end{align*}
 sostituendo nell'equazione precedente, l'incertezza sul volume sarà pari a
 	\[
@@ -562,9 +576,9 @@ Per propagare l'errore su tale valore, dunque, sommiamo in quadratura gli errori
 	\]
 Dove gli errori assoluti su massa e volume sono ottenuti propagando l'incertezza sulla differenza dei valori finale e iniziale
 	\[
-	\sigma_{\Delta V}=\sqrt{2\sigma_V}=\SI{0,7}{mL} \qquad \text{ricordando che $\sigma_V=\SI{0,5}{mL}$}
+	\sigma_{\Delta V}=\sqrt{2\sigma_V^2}=\SI{0,7}{mL} \qquad \text{ricordando che $\sigma_V=\SI{0,5}{mL}$}
 	\] \[
-	\sigma_{\Delta m}=\sqrt{2\sigma_m}=\SI{5,7e-4}{g} \qquad \text{ricordando che $\sigma_m=\SI{0,0004}{g}$};
+	\sigma_{\Delta m}=\sqrt{2\sigma_m^2}=\SI{5,7e-4}{g} \qquad \text{ricordando che $\sigma_m=\SI{0,0004}{g}$};
 	\]
 Perciò 
 	\[
