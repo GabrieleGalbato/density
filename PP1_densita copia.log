@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  2 APR 2017 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,23 +542,31 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count166
+\float@exts=\toks24
+\float@box=\box54
+\@float@everytoks=\toks25
+\@floatcapt=\box55
+)
 (./PP1_densita copia.aux)
 \openout1 = `"PP1_densita copia.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Info: Redefining \it@ocap on input line 25.
-LaTeX Info: Redefining \it@ccap on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Info: Redefining \it@ocap on input line 26.
+LaTeX Info: Redefining \it@ccap on input line 26.
 
 
 File italian.ldf warning: 
@@ -566,7 +574,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 25.
+italian.ldf    on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
@@ -576,20 +584,20 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-\c@lstlisting=\count166
+\c@lstlisting=\count167
  (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
+\scratchcounter=\count168
 \scratchdimen=\dimen186
-\scratchbox=\box54
-\nofMPsegments=\count168
-\nofMParguments=\count169
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count170
+\scratchbox=\box56
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count171
 \MPscratchDim=\dimen187
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -638,23 +646,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c__siunitx_mathsf_int=\count173
-\c__siunitx_mathtt_int=\count174
+\c__siunitx_mathsf_int=\count174
+\c__siunitx_mathtt_int=\count175
 
 <logo.png, id=1, 844.98083pt x 597.38382pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 28.
+Package pdftex.def Info: logo.png used on input line 29.
 (pdftex.def)             Requested size: 382.6556pt x 44.03973pt.
 
-Overfull \hbox (37.6556pt too wide) in paragraph at lines 28--29
+Overfull \hbox (37.6556pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <13> not available
-(Font)              size <12> substituted on input line 32.
+(Font)              size <12> substituted on input line 33.
 
 (./PP1_densita copia.toc [1
 
@@ -668,59 +677,61 @@ png>])
 \openout4 = `"PP1_densita copia.lot"'.
 
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
  [3] [4] [5]
 
-LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 156.
+LaTeX Warning: Reference `tab:densita_1' on page 6 undefined on input line 157.
 
 
 [6]
-Overfull \hbox (77.0285pt too wide) in paragraph at lines 200--237
+Overfull \hbox (77.0285pt too wide) in paragraph at lines 201--238
  [][] 
  []
 
 [7]
 
-LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 282
-.
-
-
-LaTeX Warning: Reference `tab:cilindro_C' on page 8 undefined on input line 296
+LaTeX Warning: Reference `tab:cilindro_B' on page 8 undefined on input line 283
 .
 
 [8]
+Overfull \hbox (100.17912pt too wide) detected at line 332
+\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ;
+ []
 
-LaTeX Warning: Reference `fig:grafico_campioniA' on page 9 undefined on input l
-ine 306.
+[9]
 
+LaTeX Warning: Reference `fig:grafico_campioniA' on page 10 undefined on input 
+line 366.
+
+[10]
 Package epstopdf Info: Source file: <graph.eps>
-(epstopdf)                    date: 2017-04-02 10:58:50
+(epstopdf)                    date: 2017-04-01 18:39:17
 (epstopdf)                    size: 5565 bytes
 (epstopdf)             Output file: <graph-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-02 10:58:50
+(epstopdf)                    date: 2017-04-01 18:39:17
 (epstopdf)                    size: 10610 bytes
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 409.
 Package epstopdf Info: Output file is already uptodate.
-<graph-eps-converted-to.pdf, id=55, 505.89pt x 505.89pt>
+ <graph-eps-converted-to.pdf, id=62, 505.89pt x 505.89pt>
 File: graph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graph-eps-converted-to.pdf>
-Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 349.
+Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 409.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
- [9]
-Overfull \hbox (12.86172pt too wide) in paragraph at lines 355--379
+
+Overfull \hbox (12.86172pt too wide) in paragraph at lines 415--439
  [] 
  []
 
-[10 <./graph-eps-converted-to.pdf>] [11] [12] [13] [14] [15]
+[11] [12 <./graph-eps-converted-to.pdf>] [13] [14] [15] [16] [17]
 (./PP1_densita copia.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -729,18 +740,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15187 strings out of 493014
- 297139 string characters out of 6133352
- 350404 words of memory out of 5000000
- 18565 multiletter control sequences out of 15000+600000
+ 15233 strings out of 493014
+ 297765 string characters out of 6133351
+ 354818 words of memory out of 5000000
+ 18607 multiletter control sequences out of 15000+600000
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,42p,10545b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,19n,42p,10545b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -764,10 +772,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "PP1_densita copia.pdf" (15 pages, 530867 bytes).
+Output written on "PP1_densita copia.pdf" (17 pages, 538896 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 165 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
