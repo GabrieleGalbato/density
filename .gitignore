@@ -26,3 +26,14 @@ PP1_densita copia.lot
 PP1_densita copia.log
 
 PP1_densita copia.aux
+*.log
+
+*.aux
+
+*.log
+
+*.lot
+
+*.toc
+
+*.gz
