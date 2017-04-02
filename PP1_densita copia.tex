@@ -78,8 +78,6 @@ Inoltre, si farà riferimento alle seguenti formule:
 		\end{equation}	
 \end{enumerate}
 
-%===============SCOPO E DESCRIZIONE DELL'ESPERIENZA==============
-
 \section{Scopo e descrizione dell'esperienza}
 L'esperienza si sviluppa secondo 5 operazioni sperimentali:
 \begin{enumerate}
@@ -89,8 +87,6 @@ L'esperienza si sviluppa secondo 5 operazioni sperimentali:
 \item misura della densità di un singolo campione di materiale differente, al fine di identificarne la composizione; 
 \item determinazione della densità dei campioni già misurati nella seconda fase, utilizzando un metodo grafico.
 \end{enumerate}
-
-%============ APPARATO SPERIMENTALE ============
 
 \section{Apparato Sperimentale}
 \subsection{Strumenti}
@@ -114,10 +110,7 @@ L'esperienza si sviluppa secondo 5 operazioni sperimentali:
 Un primo controllo sugli strumenti di misura ci porta a concludere che il calibro ventesimale è ben tarato e non presenta offset evidenti (come, d'altronde, ci aspettavamo per il modo di costruzione dello strumento); il calibro Palmer risulta invece essere soggetto di un offset di valutazione incerta, approfondiremo il problema nella sezione \ref{subsec:singolo_campione}.
 La bilancia di precisione può essere tarata a $0$ prima di ogni misurazione; la provetta graduata sarà invece riempita fino a un certo livello e si valuteranno le differenze di indicazioni segnate, permettendo dunque di escludere l'incertezza del valore considerato come~$0$.
 
-%================ SINGOLO CAMPIONE A ==============
-
 \subsection{Misura della densità di un singolo campione}\label{subsec:singolo_campione}
-<<<<<<< HEAD
 Scegliamo come campione dal gruppo \textbf{A} il cilindro che abbiamo numerato $9$.
 La procedura di misurazione consiste in:
 \begin{enumerate}
@@ -172,25 +165,18 @@ Tutti i dati sperimentali raccolti sono riportati nella tabella~\ref{tab:cilindr
 \end{tabular}
 \end{table}
 Per determinare quale tra il calibro ventesimale e il calibro Palmer sia più adatto alla nostra esperienza, e di conseguenza per determinare lo strumento con il quale effettuare il resto delle misure di questa sezione, confrontiamo le incertezze relative all'altezza nei due diversi casi. \\
-=======
-Scegliamo come campione dal gruppo \textbf{A} il cilindro che abbiamo numerato $9$, quindi ne misuriamo 30 volte l'altezza con il calibro a nonio e con il calibro Palmer. Scelto il calibro Palmer per proseguire le misurazioni, come argomentato più avanti, misuriamo 30 volte il diametro e poi 30 volte la massa con la bilancia di precisione. Tutti i dati sperimentali raccolti sono riportati nella tabella~\ref{tab:cilindro9_A}. 
-
-\paragraph{Scelta tra calibro ventesimale e calibro Palmer}
-Per determinare quale tra il calibro ventesimale e il calibro Palmer sia più adatto alla nostra esperienza, e di conseguenza per determinare lo strumento con il quale effettuare il resto delle misure di questa sezione, confrontiamo le incertezze relative all'altezza nei due diversi casi. 
-
->>>>>>> origin/master
 Le misure con il calibro a nonio sono sintetizzate da
 \[
 	\bar{h} = \SI{20,08667}{mm} \qquad \sigma = \SI{0,03198}{mm}
-\]dove con $\bar{h}$ intendiamo la media calcolata con (\ref{eq:media}), mentre con $\sigma$ intendiamo la deviazione standard calcolata con (\ref{eq:deviazione}). Per quanto detto nella sezione \ref{subsec:verifica}, il calibro a nonio non presenta alcun errore di calibrazione nella misura dello $0$, non essendo uno strumento tendenzialmente affetto da offset considereremo credibile questo risultato e non propagheremo un'eventuale incertezza nella misura dello~$0$. L'errore di tipo B stimato per questo strumento è quello riportato nella sezione \ref{subsec:strumenti}, cioè $u_n = \SI{0,05}{mm}$. La misura dell'altezza $h$ effettuata con il calibro a nonio è quindi soggetta ad un'incertezza $\sigma_T$ stimabile come
-\[
-	\sigma_T = \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_n^2} = \SI{0,05}{mm}.
-\]
+\]dove con $\bar{h}$ intendiamo la media calcolata con (\ref{eq:media}), mentre con $\sigma$ intendiamo la deviazione standard calcolata con (\ref{eq:deviazione}). Per quanto detto nella sezione \ref{subsec:verifica}, il calibro a nonio non presenta alcun errore di calibrazione nella misura dello $0$, non essendo uno strumento tendenzialmente affetto da offset considereremo credibile questo risultato e non propagheremo un'eventuale incertezza nella misura dello $0$. L'errore di tipo B stimato per questo strumento è quello riportato nella sezione \ref{subsec:strumenti}, cioè $u_n = \SI{0,05}{mm}$. La misura dell'altezza $h$ effettuata con il calibro a nonio è quindi soggetta ad un'incertezza $\sigma_T$ stimabile come
+\begin{align*}\label{eq:sigma_h_nonio}
+	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_n \\
+			&= \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + u_n^2} = \SI{0,05}{mm}.
+\end{align*}
 Risultato prevedibile in quanto $\sigma/\sqrt{30}$ è di diversi ordini di grandezza inferiore di $u_n$. L'incertezza relativa all'altezza misurata con il calibro a nonio è quindi, in percentuale, 
 \begin{equation}\label{eq:incertezza_percentuale_nonio}
 	\frac{\sigma_T}{\bar{h}} = 0,25 \%.
 \end{equation}
-
 Le misure con il calibro Palmer sono sintetizzate da
 \[
 	\bar{h} = \SI{20,01653}{mm} \qquad \sigma = \SI{0,00468}{mm}
@@ -198,7 +184,6 @@ Le misure con il calibro Palmer sono sintetizzate da
 \[
 	\bar{z} = \SI{0,006}{mm} \qquad \sigma_z = \SI{0,0035}{mm},
 \]
-<<<<<<< HEAD
 le misure dell'offset sono riportate nella tabella \ref{tab:offset}.
 \begin{table}[ht]
 \caption{Misure di Offset registrate sul Palmer}
@@ -228,17 +213,10 @@ Dovremo quindi tener conto anche della dispersione dell'offset nella propagazion
 	\sigma_T &= \frac{\sigma}{\sqrt{30}} \oplus u_p \oplus \frac{\sigma_z}{\sqrt{10}} \oplus u_p\\
 			&= \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + \left(\frac{\sigma_z}{\sqrt{10}}\right)^2 + 2 u_p^2} = \SI{0,0020}{mm}
 \end{align*}
-=======
-le misure dell'offset sono riportate nella tabella \ref{tab:offset}. Dovremo quindi tener conto anche della dispersione dell'offset nella propagazione dell'incertezza su questa misura. L'incertezza di tipo B del calibro Palmer può essere stimata nell'ordine di $u_p = \SI{0,001}{mm}$, propagando l'errore sulla misura otteniamo
-\[
-	\sigma_T = \sqrt{\left(\frac{\sigma}{\sqrt{30}}\right)^2 + \left(\frac{\sigma_z}{\sqrt{10}}\right)^2 + 2 u_p^2} = \SI{0,0020}{mm}
-\]
->>>>>>> origin/master
 dove abbiamo considerato l'incertezza strumentale sia nella misura dell'altezza che in quella dello $0$. L'incertezza relativa è quindi, in percentuale,
 \begin{equation}\label{eq:incertezza_percentuale_palmer}
 	\frac{\sigma_T}{\bar{h}} = 0,01 \%.
 \end{equation}
-<<<<<<< HEAD
 Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate con il calibro Palmer è nettamente inferiore di quella sulle misure del nonio, abbiamo quindi scelto il calibro Palmer per effettuare (ove possibile) le successive misure di lunghezza. \\
 Dopo aver effettuato tutte le misure necessarie (sintetizzate nella tabella \ref{tab:riepilogo_cilindro9_A}), ossia altezza, diametro e massa del cilindro, siamo in grado di calcolare la densità relativa ad ogni misura attraverso l'equazione
 \begin{table}
@@ -256,12 +234,6 @@ Dopo aver effettuato tutte le misure necessarie (sintetizzate nella tabella \ref
    \hline
 \end{tabular}
 \end{table}
-=======
-Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate con il calibro Palmer è nettamente inferiore di quella sulle misure del nonio, abbiamo quindi scelto il calibro Palmer per effettuare (ove possibile) le successive misure di lunghezza. 
-
-
-Dopo aver effettuato tutte le misure necessarie (sintetizzate nella tabella \ref{tab:riepilogo_cilindro9_A}), ossia altezza, diametro e massa di ogni cilindro, siamo in grado di calcolare la densità relativa ad ogni misura attraverso l'equazione
->>>>>>> origin/master
 \begin{equation}\label{eq:densita}
 	 \rho = \frac{m}{\frac{\pi}{4}\cdot(\frac{D}{10})^2\cdot\frac{h}{10}}
 \end{equation} che restituisce la densità in $\SI{}{g/cm^3}$, ottenendo i dati riportati nella tabella \ref{tab:vol_rho_cil9}.
@@ -357,10 +329,9 @@ Volume ($cm^3$) & 2,257 & 1,0386e-05 & 0,0033 & 2,271 & 2,253 \\ [0.2cm]
 \end{tabular}
 \end{table}
 Confrontando il risultato ottenuto con una lista di densità note e sfruttando la nostra \emph{prior} per escluderne una parte, concludiamo che il cilindro \textbf{A-9} è fatto di \emph{alluminio} ($\rho = \SI{2,70}{g/cm^3}$).
-
+%presentazione della media con relativa incertezza
 %qualifica delle sorgenti di errore	
 	
-<<<<<<< HEAD
 
 
 
@@ -376,11 +347,6 @@ I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per 
 \begin{table}
 \caption{Misure sui 30 campioni A}
 \label{tab:30_cilindri}
-=======
-\begin{table}[H]
-\caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
-\label{tab:cilindro9_A}
->>>>>>> origin/master
 \centering
 \begin{tabular}{cccc}
   \hline
@@ -468,7 +434,6 @@ Volume ($cm^3$) & $\rho$ ($\frac{g}{cm^3}$)\\
    \hline
 \end{tabular}
 \end{table}
-<<<<<<< HEAD
 \begin{table}
 \caption{Sintesi della densità dei 30 campioni A}
 \label{tab:vol_rho_global}
@@ -481,96 +446,6 @@ Volume ($cm^3$) & $\rho$ ($\frac{g}{cm^3}$)\\
    \hline
 \end{tabular}
 \end{table}
-=======
-
-\begin{table}[H]
-\caption{Misure di Offset registrate sul Palmer}
-\label{tab:offset}
-\centering
-\begin{tabular}{|cc|}
-  \hline
- & Offset (mm)\\ 
-  \hline
-   Media: & 0,006 \\ 
-  $\sigma$: & 0,004 \\[0.3cm]
-  1 & 0,005 \\ 
-  2 & 0,009 \\ 
-  3 & 0,009 \\ 
-  4 & 0,005 \\ 
-  5 & 0,005 \\ 
-  6 & 0,001 \\ 
-  7 & 0,000 \\ 
-  8 & 0,009 \\ 
-  9 & 0,010 \\ 
-  10 & 0,009 \\ 
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[ht]
-\caption{Riepilogo dei valori di altezza misurata con Palmer e nonio, diametro misurato con Palmer e massa del cilindro 9 dei campioni A.}
-\label{tab:riepilogo_cilindro9_A}
-\centering
-\begin{tabular}{rcccc}
-  \hline
- & Media & $\sigma$ & Max & Min \\ 
-  \hline
-  Altezza - Palmer (mm) & 20,017 & 0,005 & 20,025 & 20,009 \\
-  Altezza - nonio (mm) & 20,09 & 0,03 & 20,15 & 20,05 \\ 
-  Diametro - Palmer (mm) & 11,983 & 0,009 & 12,018 & 11,971 \\ 
-  Massa (g)  & 6,1080 & 0,0010 & 6,1100 & 6,1050 \\ 
-   \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\caption{Misure di volume e densità ripetute 30 volte sul campione 9}
-\label{tab:vol_rho_cil9}
-\centering
-\begin{tabular}{ccc}
-  \hline
- & Volume ($cm^3$) & $\rho$ ($\frac{g}{cm^3}$) \\ 
-  \hline
-1 & 2,255 & 2,709 \\ 
-  2 & 2,259 & 2,704 \\ 
-  3 & 2,271 & 2,689 \\ 
-  4 & 2,254 & 2,709 \\ 
-  5 & 2,258 & 2,705 \\ 
-  6 & 2,258 & 2,706 \\ 
-  7 & 2,256 & 2,706 \\ 
-  8 & 2,256 & 2,707 \\ 
-  9 & 2,258 & 2,704 \\ 
-  10 & 2,256 & 2,708 \\ 
-  11 & 2,256 & 2,707 \\ 
-  12 & 2,256 & 2,708 \\ 
-  13 & 2,259 & 2,704 \\ 
-  14 & 2,260 & 2,703 \\ 
-  15 & 2,257 & 2,707 \\ 
-  16 & 2,257 & 2,707 \\ 
-  17 & 2,255 & 2,709 \\ 
-  18 & 2,258 & 2,706 \\ 
-  19 & 2,256 & 2,708 \\ 
-  20 & 2,253 & 2,711 \\ 
-  21 & 2,261 & 2,702 \\ 
-  22 & 2,258 & 2,705 \\ 
-  23 & 2,257 & 2,706 \\ 
-  24 & 2,260 & 2,703 \\ 
-  25 & 2,256 & 2,708 \\ 
-  26 & 2,255 & 2,709 \\ 
-  27 & 2,261 & 2,702 \\ 
-  28 & 2,258 & 2,706 \\ 
-  29 & 2,253 & 2,711 \\ 
-  30 & 2,256 & 2,708 \\ 
-   \hline
-\end{tabular}
-\end{table}
-
-%============= 30 CAMPIONI A =============
-
-\subsection{Misura della densità dei campioni A}
-Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \textbf{A}. Dopo averli numerati, ne misuriamo diametro e altezza una volta con il calibro Palmer, e la massa con la bilancia di precisione. I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato, attraverso l'equazione (\ref{eq:densita}) è possibile da essi calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}; i valori della densità sono sintetizzati nella tabella \ref{tab:vol_rho_global}.
-
->>>>>>> origin/master
 Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta campioni, adottiamo gli stessi calcoli discussi nella sezione \ref{subsec:singolo_campione} ottenendo, come ha senso che sia, una propagazione media delle incertezze sulla densità data da
 \begin{equation}\label{eq:uB_trenta}
 	u_B = \SI{0,0043}{g/cm^3}
@@ -582,101 +457,7 @@ Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta cam
 	\boxed{\textbf{$\rho$ = {\SI{2,696 \pm 0,004}{\frac{g}{cm^3}}}}}
 \end{equation} che, come prima, è assolutamente compatibile con la densità dell'\emph{alluminio} (\SI{2,70}{g/cm^3}).
 
-\begin{table}[H]
-\caption{Singole misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sui 30 cilindri. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
-\label{tab:30_cilindri}
-\centering
-\begin{tabular}{cccc}
-  \hline
- & Altezza-Palmer(mm) & Diametro-Palmer(mm) & Massa(g) \\ 
-  \hline
-Incertezza: & 0,001 & 0,001 & 0,0003 \\ [0.1cm]
-  Media: & 20,024 & 10,500 & 4,7842 \\[0.3cm] 
-  1 & 21,060 & 11,970 & 6,0960 \\ 
-  2 & 20,080 & 11,960 & 6,0610 \\ 
-  3 & 20,012 & 7,950 & 2,6940 \\ 
-  4 & 19,820 & 11,915 & 5,9850 \\ 
-  5 & 20,019 & 9,972 & 4,2630 \\ 
-  6 & 20,050 & 11,955 & 6,1080 \\ 
-  7 & 18,905 & 8,050 & 2,6000 \\ 
-  8 & 20,040 & 7,970 & 2,7030 \\ 
-  9 & 20,017 & 11,983 & 6,1070 \\ 
-  10 & 18,178 & 9,935 & 3,8130 \\ 
-  11 & 19,990 & 7,969 & 2,6940 \\ 
-  12 & 19,995 & 11,960 & 6,0990 \\ 
-  13 & 20,030 & 9,945 & 4,2180 \\ 
-  14 & 20,030 & 11,945 & 6,1050 \\ 
-  15 & 19,694 & 11,920 & 5,9330 \\ 
-  16 & 20,019 & 9,955 & 4,2100 \\ 
-  17 & 20,005 & 11,970 & 6,1110 \\ 
-  18 & 20,596 & 9,952 & 4,3310 \\ 
-  19 & 18,320 & 11,922 & 5,5110 \\ 
-  20 & 19,975 & 7,960 & 2,6940 \\ 
-  21 & 22,020 & 8,050 & 3,0420 \\ 
-  22 & 20,705 & 9,960 & 4,3330 \\ 
-  23 & 20,020 & 11,962 & 6,1060 \\ 
-  24 & 20,740 & 11,940 & 6,2590 \\ 
-  25 & 22,372 & 9,955 & 4,7090 \\ 
-  26 & 20,090 & 9,989 & 4,0240 \\ 
-  27 & 17,945 & 8,055 & 2,4620 \\ 
-  28 & 20,010 & 11,960 & 6,0580 \\ 
-  29 & 19,970 & 11,978 & 6,0890 \\ 
-  30 & 20,021 & 11,985 & 6,1080 \\
-  \hline
-\end{tabular}
-\end{table}
-
-
-
-
-
-\begin{table}[H]
-\caption{Misure di volume e densità dei 30 campioni}
-\label{tab:vol_rho}
-\centering
-\begin{tabular}{ccc}
-  \hline
- & Volume ($cm^3$) & $\rho$ ($\frac{g}{cm^3}$)\\ 
-  \hline
-1 & 2,370 & 2,572 \\ 
-  2 & 2,256 & 2,687 \\ 
-  3 & 0,993 & 2,712 \\ 
-  4 & 2,210 & 2,708 \\ 
-  5 & 1,563 & 2,727 \\ 
-  6 & 2,251 & 2,714 \\ 
-  7 & 0,962 & 2,702 \\ 
-  8 & 1,000 & 2,704 \\ 
-  9 & 2,257 & 2,705 \\ 
-  10 & 1,409 & 2,706 \\ 
-  11 & 0,997 & 2,702 \\ 
-  12 & 2,246 & 2,715 \\ 
-  13 & 1,556 & 2,711 \\ 
-  14 & 2,245 & 2,720 \\ 
-  15 & 2,198 & 2,700 \\ 
-  16 & 1,558 & 2,702 \\ 
-  17 & 2,251 & 2,715 \\ 
-  18 & 1,602 & 2,703 \\ 
-  19 & 2,045 & 2,695 \\ 
-  20 & 0,994 & 2,710 \\ 
-  21 & 1,121 & 2,714 \\ 
-  22 & 1,613 & 2,686 \\ 
-  23 & 2,250 & 2,714 \\ 
-  24 & 2,322 & 2,695 \\
-  25 & 1,741 & 2,704 \\ 
-  26 & 1,574 & 2,556 \\ 
-  27 & 0,914 & 2,692 \\ 
-  28 & 2,248 & 2,695 \\ 
-  29 & 2,250 & 2,706 \\ 
-  30 & 2,259 & 2,704 \\ 
-   \hline
-\end{tabular}
-\end{table}
-
-
-%=========== CAMPIONE B ==========
-
 \subsection{Misura della densità del campione B}
-<<<<<<< HEAD
 Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. La procedura seguita per determinarne la densità è la seguente:
 \begin{enumerate}
 \item misura unica dell'altezza con il calibro a nonio (in quanto è al di fuori della portata del calibro Palmer);
@@ -697,11 +478,6 @@ Massa campione (m) & \SI{34,612 \pm 0,0003}{} & \SI{}{g} \\
 \end{tabular}
 \end{table}
  L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
-=======
-Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilindro con dimensioni maggiori rispetto ai precedenti. Ne misuriamo l'altezza con il calibro a nonio, in quanto essa è fuori dalla portata del Palmer, dil diametro con il calibro Palmer e la massa con la bilancia di precisione. I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_B}. 
-
-L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
->>>>>>> origin/master
 \begin{equation}\label{eq:vol_B}
 	V = \frac{\pi}{4000}(D - \bar{z_0})^2h
 \end{equation} in cui si è usata la stessa notazione di sopra. Da (\ref{eq:vol_B}) si ricavano le derivate parziali
@@ -723,8 +499,6 @@ Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni sta
 %presentazione della densità con calcolo dell'incertezza
 %commento sulla compatibilità del materiale del gruppo A e del campione B
 %commento sull'incertezza ottenuta rispetto al metodo utilizzato in 3.2
-
-%======== CAMPIONE C =============
 
 \subsection{Misura della densità del campione C}
 Il campione \textbf{C} è un cilindro che presenta un foro in prossimità della base, che approssimiamo a sua volta come un cilindro di altezza pari al diametro del campione, e di cui calcoliamo il diametro con il calibro a nonio; misuriamo invece il diametro e l'altezza del campione con il calibro Palmer, e la massa con la bilancia di precisione. Indichiamo con $z_0$ l'offset del calibro Palmer.
@@ -798,8 +572,6 @@ La nostra stima della densità del campione \textbf{C} è dunque
 
 %commento sull'incertezza
 %determinazione del materiale di cui è costituito il campione
-
-%=========== CAMPIONI A METODO GRAFICO ==============
 
 \subsection{Misura della densità dei campioni A con metodo grafico}
 Adottiamo ora un altro metodo per determinare la densità dei campioni \textbf{A}, suddividendoli in 10 gruppi di cui misuriamo in modo integrale massa e volume, quest'ultimo mediante la variazione del livello di acqua in una provetta graduata. 
@@ -887,105 +659,10 @@ La stima della densità con metodo grafico è dunque
 	\boxed{\textbf{{\SI{2,70 \pm 0,04}{\frac{g}{mL}} = \SI{2,70 \pm 0,04}{\frac{g}{cm^3}}}}}.
 	\]
 É evidente che l'incertezza su tale stima, che è pari all'$1,5\%$, sia maggiore rispetto a quella ottenuta con i metodi precedenti. Riteniamo che questo sia dovuto alla minore precisione nella misura del volume ottenuta attraverso la variazione del livello di acqua nella provetta rispetto al calcolo indiretto misurando le dimensioni con il più preciso calibro Palmer.
-<<<<<<< HEAD
-=======
-\begin{figure}
-\centering
-\caption{Volume integrale in funzione della massa integrale dei campioni A, con retta di \emph{best fit}, generato con R.}
-\label{fig:grafico_campioniA_pc}
-\includegraphics[scale=0.5]{graph.eps}
-\end{figure}
-
-\begin{figure}
-\centering
-\caption{Istogramma densità di 30 campioni.}
-\label{fig:istogramma}
-\includegraphics[scale=0.18]{hist.jpg}
-\end{figure}
-
-
-
-\begin{figure}
-\centering
-\caption{Volume integrale in funzione della massa integrale dei campioni A, con retta di \emph{best fit}.}
-\label{fig:grafico_campioniA}
-\includegraphics[scale=0.18]{graph.jpg}
-\end{figure}
-
-\begin{table}
-\centering
-\begin{threeparttable}
-\caption{Misure della variazione del livello dell'acqua in una provetta graduata in seguito all'inserimento graduale di 10 gruppi di 3 cilindri.}
-\label{tab:provetta}
-\begin{tabular}{cccc}
-  \hline
- & Massa(g)& Volume $V$(ml) & Variazione volume $\Delta V$(ml)\\ 
-  \hline
-   Incertezza: & 0,0003 & 0,5 & 0,5 \\[0.1cm] 
-Condizione iniziale\tnote{1} : & 0,0000 & 115,0 & 0,0 \\[0.3cm] 
-  1 & 11,2620 & 119,0& 4,0 \\ 
-  2 & 29,2920 & 126,0 & 11,0 \\ 
-  3 & 44,0600 & 131,0 & 16,0 \\ 
-  4 & 58,6300 & 136,0 & 21,0 \\ 
-  5 & 69,8700 & 140,0 & 25,0 \\ 
-  6 & 86,8000 & 146,0 & 31,0 \\ 
-  7 & 101,0500 & 153,0 & 38,0 \\ 
-  8 & 119,4800 & 159,0 & 44,0 \\ 
-  9 & 134,1300 & 164,0 & 49,0 \\ 
-  10 & 143,5400 & 168,0 & 53,0 \\
-  \hline
-\end{tabular}
-\begin{tablenotes}
-\item[1] \scriptsize{Equivale alla lettura del livello dell'acqua nella provetta prima che alcun campione venisse inserito.}
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
-
-
-
-%=========== CONSIDERAZIONI FINALI =======
-
-\section{Considerazioni finali}\label{sec:c_finali}
-%indicare le sorgenti di errore e come contribuiscono alle incertezze di tipo A e di tipo B
-%commentare sulla qualità delle misure e sulle diverse strategie di misure sperimentate
->>>>>>> origin/master
 
 
 
 
-<<<<<<< HEAD
-=======
-\begin{table}[ht]
-\caption{Considerazioni globali su volume e densità dei 30 campioni}
-\label{tab:vol_rho_global}
-\centering
-\begin{tabular}{cccccc}
-  \hline
- & Media & $\sigma^2$ & $\sigma$ & Max & Min \\ 
-  \hline
-Volume ($cm^3$) & 1,775 & 0,2663 & 0,5249 & 2,370 & 0,915 \\ [0.2cm]
-  $\rho$ ($\frac{g}{cm^3}$) & 2,696 & 0,0013 & 0,0371 & 2,727 & 2,556 \\[0.1cm]
-   \hline
-\end{tabular}
-\end{table}
-
-
-
-
-\begin{table}[ht]
-\caption{Considerazioni globali su volume e densità del campione 9}
-\label{tab:vol_rho_global9}
-\centering
-\begin{tabular}{cccccc}
-  \hline
- & Media & $\sigma^2$ & $\sigma$ & Max & Min\\ 
-  \hline
-Volume ($cm^3$) & 2,257 & 1,0386e-05 & 0,0033 & 2,271 & 2,253 \\ [0.2cm]
-  $\rho$ ($\frac{g}{cm^3}$) & 2,706 & 1,4833e-05 & 0,0039 & 2,711 & 2,689 \\ [0.1cm]
-   \hline
-\end{tabular}
-\end{table}
->>>>>>> origin/master
 
 
 

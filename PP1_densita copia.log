@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 18:40
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  2 APR 2017 16:31
->>>>>>> origin/master
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,11 +550,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box55
 )
-(./PP1_densita copia.aux
-
-LaTeX Warning: Label `fig:istogramma' multiply defined.
-
-)
+(./PP1_densita copia.aux)
 \openout1 = `"PP1_densita copia.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -690,17 +682,12 @@ png>])
 \openout5 = `"PP1_densita copia.lof"'.
 
  [2]
-<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 95.
-=======
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 98.
->>>>>>> origin/master
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-<<<<<<< HEAD
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
  [3] [4]
 Overfull \hbox (21.55627pt too wide) in paragraph at lines 129--166
@@ -738,35 +725,14 @@ Overfull \hbox (77.39993pt too wide) in paragraph at lines 614--615
  [][] 
  []
 
-=======
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
- [3] [4] [5]
-[6]
-Overfull \hbox (21.55627pt too wide) in paragraph at lines 201--238
- [][] 
- []
-
-[7] [8] [9] [10] [11]
-
-LaTeX Warning: Reference `tab:cilindro_B' on page 12 undefined on input line 43
-2.
-
-[12] [13]
-Overfull \hbox (100.17912pt too wide) detected at line 503
-\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ;
- []
-
-[14] [15]
->>>>>>> origin/master
 Package epstopdf Info: Source file: <graph.eps>
-(epstopdf)                    date: 2017-04-01 18:39:17
+(epstopdf)                    date: 2017-04-02 10:58:50
 (epstopdf)                    size: 5565 bytes
 (epstopdf)             Output file: <graph-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-01 18:39:17
+(epstopdf)                    date: 2017-04-02 10:58:50
 (epstopdf)                    size: 10610 bytes
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
-<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 <graph-eps-converted-to.pdf, id=80, 505.89pt x 505.89pt>
@@ -777,69 +743,16 @@ Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 621.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
  [16] [17 <./graph.jpg>] [18 <./graph-eps-converted-to.pdf>] [19] (./PP1_densit
 a copia.aux)
-=======
-(epstopdf)             \includegraphics on input line 582.
-Package epstopdf Info: Output file is already uptodate.
- <graph-eps-converted-to.pdf, id=78, 505.89pt x 505.89pt>
-File: graph-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graph-eps-converted-to.pdf>
-Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 582.
-(pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
- <hist.jpg, id=79, 2346.7675pt x 1659.19875pt>
-File: hist.jpg Graphic file (type jpg)
-
-<use hist.jpg>
-Package pdftex.def Info: hist.jpg used on input line 589.
-(pdftex.def)             Requested size: 422.39993pt x 298.64288pt.
-
-Overfull \hbox (77.39993pt too wide) in paragraph at lines 589--590
- [][] 
- []
-
-<graph.jpg, id=80, 2346.7675pt x 1659.19875pt>
-File: graph.jpg Graphic file (type jpg)
- <use graph.jpg>
-Package pdftex.def Info: graph.jpg used on input line 598.
-(pdftex.def)             Requested size: 422.39993pt x 298.64288pt.
-
-Overfull \hbox (77.39993pt too wide) in paragraph at lines 598--599
- [][] 
- []
-
-
-Overfull \hbox (12.86172pt too wide) in paragraph at lines 604--628
- [] 
- []
-
-[16] [17 <./graph-eps-converted-to.pdf>] [18 <./hist.jpg>] [19 <./graph.jpg>]
-(./PP1_densita copia.aux)
->>>>>>> origin/master
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-<<<<<<< HEAD
  ) 
 Here is how much of TeX's memory you used:
  15247 strings out of 493014
  297953 string characters out of 6133352
  331866 words of memory out of 5000000
  18616 multiletter control sequences out of 15000+600000
-=======
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
-Here is how much of TeX's memory you used:
- 15245 strings out of 493014
- 297914 string characters out of 6133351
- 329895 words of memory out of 5000000
- 18617 multiletter control sequences out of 15000+600000
->>>>>>> origin/master
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,19n,42p,10545b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -866,11 +779,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-<<<<<<< HEAD
 Output written on "PP1_densita copia.pdf" (19 pages, 1793943 bytes).
-=======
-Output written on "PP1_densita copia.pdf" (19 pages, 1792106 bytes).
->>>>>>> origin/master
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams
