@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.5)  2 APR 2017 10:57
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.30)  1 APR 2017 18:36
+>>>>>>> origin/master
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,9 +715,17 @@ ine 303.
 LaTeX Warning: File `graph.eps' not found on input line 346.
 
 Package epstopdf Info: Source file: <graph.eps>
+<<<<<<< HEAD
 (epstopdf)             Output file: <graph-eps-converted-to.pdf>
 (epstopdf)                    date: 2017-04-01 18:22:02
 (epstopdf)                    size: 12798 bytes
+=======
+(epstopdf)                    date: 2017-04-01 18:33:39
+(epstopdf)                    size: 5565 bytes
+(epstopdf)             Output file: <graph-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-01 18:34:56
+(epstopdf)                    size: 10610 bytes
+>>>>>>> origin/master
 (epstopdf)             Command: <repstopdf --outfile=graph-eps-converted-to.pdf
  graph.eps>
 (epstopdf)             \includegraphics on input line 346.
@@ -724,8 +736,13 @@ File: graph-eps-converted-to.pdf Graphic file (type pdf)
 <use graph-eps-converted-to.pdf>
 Package pdftex.def Info: graph-eps-converted-to.pdf used on input line 346.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
+<<<<<<< HEAD
 
 Overfull \hbox (9.5284pt too wide) in paragraph at lines 402--420
+=======
+ [9]
+Overfull \hbox (9.5284pt too wide) in paragraph at lines 353--371
+>>>>>>> origin/master
  [][] 
  []
 
@@ -740,10 +757,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  15133 strings out of 493014
  296266 string characters out of 6133352
  352322 words of memory out of 5000000
  18515 multiletter control sequences out of 15000+600000
+=======
+ 15132 strings out of 493014
+ 296246 string characters out of 6133351
+ 349314 words of memory out of 5000000
+ 18514 multiletter control sequences out of 15000+600000
+>>>>>>> origin/master
  18203 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,42p,10545b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -765,6 +789,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
+<<<<<<< HEAD
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-d
@@ -774,6 +799,18 @@ Output written on "PP1_densita copia.pdf" (15 pages, 527087 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
+=======
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "PP1_densita copia.pdf" (15 pages, 533807 bytes).
+PDF statistics:
+ 163 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+>>>>>>> origin/master
  0 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
