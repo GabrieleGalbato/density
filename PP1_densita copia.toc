@@ -1,21 +1,15 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {section}{\numberline {0}Convenzioni e formule}{3}
-\contentsline {section}{\numberline {1}Scopo e descrizione dell'esperienza}{3}
-\contentsline {section}{\numberline {2}Apparato Sperimentale}{4}
-\contentsline {subsection}{\numberline {2.1}Strumenti}{4}
-\contentsline {subsection}{\numberline {2.2}Campioni}{4}
-\contentsline {section}{\numberline {3}Sequenza Operazioni Sperimentali}{4}
-\contentsline {subsection}{\numberline {3.1}Verifica degli strumenti}{4}
-\contentsline {subsection}{\numberline {3.2}Misura della densit\`a di un singolo campione}{4}
-\contentsline {subsection}{\numberline {3.3}Misura della densit\`a dei campioni A}{7}
-\contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{8}
-<<<<<<< HEAD
+\contentsline {section}{\numberline {0}Convenzioni e formule}{2}
+\contentsline {section}{\numberline {1}Scopo e descrizione dell'esperienza}{2}
+\contentsline {section}{\numberline {2}Apparato Sperimentale}{3}
+\contentsline {subsection}{\numberline {2.1}Strumenti}{3}
+\contentsline {subsection}{\numberline {2.2}Campioni}{3}
+\contentsline {section}{\numberline {3}Sequenza Operazioni Sperimentali}{3}
+\contentsline {subsection}{\numberline {3.1}Verifica degli strumenti}{3}
+\contentsline {subsection}{\numberline {3.2}Misura della densit\`a di un singolo campione}{3}
+\contentsline {subsection}{\numberline {3.3}Misura della densit\`a dei campioni A}{6}
+\contentsline {subsection}{\numberline {3.4}Misura della densit\`a del campione B}{7}
 \contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{8}
 \contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{10}
 \contentsline {section}{\numberline {4}Considerazioni finali}{11}
-=======
-\contentsline {subsection}{\numberline {3.5}Misura della densit\`a del campione C}{9}
-\contentsline {subsection}{\numberline {3.6}Misura della densit\`a dei campioni A con metodo grafico}{9}
-\contentsline {section}{\numberline {4}Considerazioni finali}{10}
->>>>>>> origin/master
