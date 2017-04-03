@@ -301,9 +301,9 @@ dove $\sigma_m$ e $\sigma_V$ sono le incertezze sulla massa e sul volume, la pri
 \end{equation}
 dove intendiamo con $\sigma_D, \sigma_h, \sigma_{\bar{z_0}}$ le incertezze rispettivamente su diametro, altezza e offset, con $D$ e $h$ intendiamo i valori misurati di diametro e di altezza (quindi senza la correzione dell'offset) su ogni misura e con $\bar{z_0}$ l'offset medio; scrivendo il volume in funzione dei valori misurati di diametro e di altezza (misurati in \SI{}{[mm]}) e del valore dell'offset, in modo da rendere le misure scorrelate, e derivando parzialmente otteniamo
 \begin{align}\label{eq:partial_V_A}
-	\frac{\partial V}{\partial D} &= \frac{\pi}{4000} (2Dh - 2D\bar{z_0} -2h\bar{z_0}+2\bar{z_0}^2) \\
-	\frac{\partial V}{\partial h} &= \frac{\pi}{4000} ( D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
-	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000} ( - D^2 + 2h\bar{z_0} -3 \bar{z_0}^2 - 2 Dh + 4D\bar{z_0}).
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4} (2Dh - 2D\bar{z_0} -2h\bar{z_0}+2\bar{z_0}^2) \\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4} ( D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
+	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4} ( - D^2 + 2h\bar{z_0} -3 \bar{z_0}^2 - 2 Dh + 4D\bar{z_0}).
 \end{align}
 Applicando (\ref{eq:ub_A}) a ciascuna densità e calcolandone la media otteniamo
 \begin{equation}\label{eq:ub_A_finale}
@@ -439,11 +439,17 @@ Volume (\SI{}{cm^3}) & 1,775 & 0,5249 & 2,370 & 0,915 \\ [0.2cm]
 
 \begin{figure}
 \centering
-\caption{Istogramma densità di 30 campioni.}
+\caption{Istogramma densità di 30 campioni prodotto a mano.}
 \label{fig:istogramma}
 \includegraphics[scale=0.5]{hist.pdf}
 \end{figure}
 
+\begin{figure}
+\centering
+\caption{Istogramma densità di 30 campioni generato con \emph{R}.}
+\label{fig:istogramma}
+\includegraphics[scale=0.5]{istogramma.eps}
+\end{figure}
 
 
 %=========== CAMPIONE B ==========
@@ -466,26 +472,24 @@ Massa campione (m) & \SI{34,612 \pm 0,0003}{} & \SI{}{g} \\
 
 L'altezza, a differenza dei due casi precedenti, non è affetta da offset essendo stata misurata con il nonio, il volume è quindi dato da
 \begin{equation}\label{eq:vol_B}
-	V = \frac{\pi}{4000}(D - \bar{z_0})^2h
+	V = \frac{\pi}{4}(D - \bar{z_0})^2h
 \end{equation} in cui si è usata la stessa notazione di sopra. Da (\ref{eq:vol_B}) si ricavano le derivate parziali
-\begin{align}\label{eq:partial_B}
-	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh - 2\bar{z_0}h) \\
-	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
-	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000}(2\bar{z_0}h - 2Dh).
-\end{align}
+\begin{align*}
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4}(2Dh - 2\bar{z_0}h) = \SI{1719,58}{mm^2}\\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4}(D^2 + \bar{z_0}^2 - 2D\bar{z_0}) = \SI{173,99}{mm^2}\\
+	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4}(2\bar{z_0}h - 2Dh) = \SI{-1719,58}{mm^2}.
+\end{align*}
 Inoltre possiamo assumere per diametro, altezza e massa le stesse deviazioni standard ricavate nella sezione \ref{subsec:singolo_campione} dato che avevamo misurato l'altezza sia col nonio che col Palmer, applicandole alla singola misura e non ad una media. L'incertezza sulla densità è data dalla formula
 \begin{equation}\label{eq:sigma_rho_B}
-	\sigma_T = \rho \sqrt{\left(\frac{\sigma_V}{V} \right)^2 + \left(\frac{\sigma_m}{m}\right)^2}
-\end{equation} dove $\sigma_m$ è la semplice somma in quadratura della deviazione standard calcolata nella sezione \ref{subsec:singolo_campione} con l'incertezza strumentale della bilancia, mentre $\sigma_V$ è data dalla formula (\ref{eq:sigma_V_A}) dove le derivate parziali sono quelle di (\ref{eq:partial_B}). Svolti i conti, la formula (\ref{eq:sigma_rho_B}) permette di calcolare l'incertezza
+	\sigma_\rho = \rho \sqrt{\left(\frac{\sigma_V}{V} \right)^2 + \left(\frac{\sigma_m}{m}\right)^2}
+\end{equation} dove $\sigma_m$ è la semplice somma in quadratura della deviazione standard calcolata nella sezione \ref{subsec:singolo_campione} con l'incertezza strumentale della bilancia, mentre $\sigma_V$ è data dalla formula (\ref{eq:sigma_V_A}) dove le derivate parziali sono quelle appena calcolate. Svolti i conti, la formula (\ref{eq:sigma_rho_B}) permette di calcolare l'incertezza
 \[
-	\sigma_T = \SI{0,0038}{g/cm^3}
+	\sigma_\rho = \SI{0,0038}{g/cm^3}
 \] da cui la stima per la densità del campione \textbf{B}:
 \[
 	\boxed{\textbf{$\rho$ = {\SI{2,702 \pm 0,004}{\frac{g}{cm^3}}}}}
-\] nuovamente in piena compatibilità con l'\emph{alluminio}.
-%presentazione della densità con calcolo dell'incertezza
-%commento sulla compatibilità del materiale del gruppo A e del campione B
-%commento sull'incertezza ottenuta rispetto al metodo utilizzato in 3.2
+\] nuovamente in piena compatibilità con l'\emph{alluminio}, da cui concludiamo che il campione\textbf{B} sia costituito dello stesso materiale dei campioni \textbf{A}. L'incertezza relativa ottenuta è dell'ordine dello $0,15\%$, simile a quella ottenuta nei due casi precedenti: riteniamo che questo sia dovuto alla nostra scelta di utilizzare come incertezza sulla singola misura quella propagata a partire dalla deviazione standard sulle misure effettuate in precedenza, sommata in quadratura con l'incertezza strumentale.
+
 
 %======== CAMPIONE C =============
 
@@ -511,7 +515,7 @@ Calcoliamo dunque il volume che avrebbe il campione se non fosse forato
 	\[
 	V_{\text{lordo}} = \frac{\pi}{4}\cdot (D-z_0)^2\cdot(h-z_0) = \SI{2014,42}{mm^3} = \SI{2,014}{cm^3},
 	\]
-quindi il volume del foro, con $d$ espresso in \SI{}{mm} ($d = \SI{3,00 \pm 0,05}{mm}$),
+quindi il volume del foro, con $d$ espresso in \SI{}{mm} \big($d = \SI{3,00 \pm 0,05}{mm}$\big),
 	\[
 	V_{\text{foro}} = \frac{\pi}{4}\cdot d^2\cdot(D-z_0) = \SI{91,78}{mm^3} = \SI{0,092}{cm^3};
 	\]
