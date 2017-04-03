@@ -226,7 +226,7 @@ Confrontando il risultato ottenuto con una lista di densità note e sfruttando la
 %============= 30 CAMPIONI A =============
 
 \subsection{Misura della densità dei campioni A}
-Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \textbf{A}. Dopo averli numerati, ne misuriamo una volta per ognuno il diametro e l'altezza con il calibro Palmer, e la massa con la bilancia di precisione. I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato; attraverso l'equazione (\ref{eq:densita}) è possibile calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}; i valori della densità sono sintetizzati nella tabella \ref{tab:vol_rho_global}.
+Effettuiamo ora la misura della densità di ognuno dei $30$ campioni del gruppo \textbf{A}. Dopo averli numerati, ne misuriamo una volta per ognuno il diametro e l'altezza con il calibro Palmer, e la massa con la bilancia di precisione. I risultati delle misure sono riportati nella tabella~\ref{tab:30_cilindri} per ciascun campione numerato; attraverso l'equazione (\ref{eq:densita}) è possibile calcolare volume e densità per ciascun campione ottenendo i risultati della tabella \ref{tab:vol_rho}; i valori della densità sono sintetizzati nella tabella \ref{tab:vol_rho_global} e distribuiti come mostrano gli istogrammi Figura \ref{fig:istogramma} (fatto a mano) e Figura \ref{fig:istogrammaR} (generato con \emph{R}).
 
 Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta campioni, adottiamo gli stessi calcoli discussi nella sezione \ref{subsec:singolo_campione} ottenendo, come ha senso che sia, una propagazione media delle incertezze sulla densità data da
 \begin{equation}\label{eq:uB_trenta}
@@ -255,17 +255,17 @@ Media & $\sigma$ & Max & Min \\
 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\caption{Istogramma densità di 30 campioni prodotto a mano.}
+\caption{Istogramma densità di 30 campioni prodotto a mano}
 \label{fig:istogramma}
 \includegraphics[scale=0.5]{hist.pdf}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\caption{Istogramma densità di 30 campioni generato con \emph{R}}
-\label{fig:istogramma}
+\caption{Istogramma densità di 30 campioni generato con R}
+\label{fig:istogrammaR}
 \includegraphics[scale=0.5]{istogramma.eps}
 \end{figure}
 
