@@ -180,8 +180,8 @@ Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate c
   \hline
  & Media & $\sigma$ & Max & Min\\ 
   \hline
-Volume \SI{}{[cm^3]} & 2,257 & 0,0033 & 2,271 & 2,253 \\ [0.2cm]
-  $\rho$ \SI{}{[g/cm^3]} & 2,706 & 0,0039 & 2,711 & 2,689 \\ [0.1cm]
+Volume \SI{}{[cm^3]} & 2,257 & 0,003 & 2,271 & 2,253 \\ [0.2cm]
+  $\rho$ \SI{}{[g/cm^3]} & 2,706 & 0,004 & 2,711 & 2,689 \\ [0.1cm]
    \hline
 \end{tabular}
 \end{table}
@@ -249,7 +249,7 @@ Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta cam
   \hline
 Media & $\sigma$ & Max & Min \\ 
   \hline
-2,696 & 0,0371 & 2,727 & 2,556 \\[0.1cm]
+2,696 & 0,037 & 2,727 & 2,556 \\[0.1cm]
    \hline
 \end{tabular}
 \end{table}
@@ -280,7 +280,7 @@ Il campione B, che mostra lo stesso aspetto dei campioni \textbf{A}, è un cilind
 \caption{Dimensioni e massa del campione B}
 \label{tab:cilindro_B}
 \centering
-\begin{tabular}{rrl}
+\begin{tabular}{rcl}
 \hline
 Altezza campione (h) & \SI{73,550 \pm 0,001}{} & \SI{}{mm} \\
 Diametro campione (D) & \SI{14,890 \pm 0,001}{} & \SI{}{mm} \\
@@ -320,7 +320,7 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 \caption{Dimensioni e massa del campione C}
 \label{tab:cilindro_C}
 \centering
-\begin{tabular}{rrl}
+\begin{tabular}{rcl}
 \hline
 Altezza campione ($h$) & \SI{15,220 \pm 0,001}{} & \SI{}{mm} \\
 Diametro campione ($D$) & \SI{12,990 \pm 0,001}{} & \SI{}{mm} \\
@@ -455,10 +455,10 @@ La stima della densità con metodo grafico è dunque
 In conclusione, possiamo notare che la misura ripetuta $30$ volte dello stesso campione \textbf{A} o la misura unica di $30$ campioni \textbf{A} dello stesso materiale permetta di ottenere un'incertezza simile, dovuta anche alla nostra scelta di adottare come incertezza sul singolo dato quella propagata a partire dalla somma in quadratura dell'incertezza strumentale con la deviazione standard della media delle dimensioni del singolo campione misurate in precedenza. Le principali sorgenti di incertezza di tipo A sono la nostra capacità di interpolare tra le tacche del nonio e del Palmer, che classifichiamo come casuali in quanto abbiamo uguale probabilità di sovrastimare o sottostimare; allo stesso modo, anche la lettura sulla provetta graduata è influenzata dalla presenza del menisco, che può generare equivoci sul valore indicato. Le incertezze di tipo B derivano principalmente dall'offset del Palmer e da possibili errori sistematici della bilancia.\\
 
 
-Per quanto i risultati ottenuti si avvicinino considerevolmente alle densità cercate, riteniamo opportuno ricordare che è improbabile che i campioni misurati siano costituiti da sostanze pure al $100\%$, per cui le loro densità \emph{vere} potrebbero discostarsi leggermente dalle densità standard (calcolate, appunto, su sostanze di purezza prossima al $100\%$) con cui le abbiamo confrontate; un altro fatto degno di nota è che i valori di confronto sono stati ottenuti ad una temperatura di $\SI{0}{°C}$ mentre l'esperienza è stata effettuata in un laboratorio a temperatura intorno ai $\SI{20}{°C}$, i campioni, essendo metalli, hanno subito necessariamente una dilatazione termica di volume che, per quanto piccola possa essere, potrebbe aver influenzato le nostre misure (in particolare, essendo la differenza di temperatura positiva, il volume dei campioni dovrebbe essere leggermente più grande, per cui la densità misurata dovrebbe essere leggermente inferiore a quella misurata a $\SI{0}{°C}$). Riteniamo, comunque, che questi disturbi siano su un ordine di grandezza talmente basso da non influenzare notevolmente le misure prese. \\
+Per quanto i risultati ottenuti si avvicinino considerevolmente alle densità cercate, riteniamo opportuno ricordare che è improbabile che i campioni misurati siano costituiti da sostanze pure al $100\%$, per cui le loro densità \emph{vere} potrebbero discostarsi leggermente dalle densità standard (calcolate, appunto, su sostanze di purezza prossima al $100\%$) con cui le abbiamo confrontate; un altro fatto degno di nota è che i valori di confronto sono stati ottenuti ad una temperatura di $\SI{0}{°C}$ mentre l'esperienza è stata effettuata in un laboratorio a temperatura intorno ai $\SI{20}{°C}$, i campioni, essendo metalli, hanno subito necessariamente una dilatazione termica di volume che, per quanto piccola possa essere, potrebbe aver influenzato le nostre misure (in particolare, essendo la differenza di temperatura positiva, il volume dei campioni dovrebbe essere leggermente più grande, per cui la densità misurata dovrebbe essere leggermente inferiore di quella misurata a $\SI{0}{°C}$). Riteniamo, comunque, che questi disturbi siano su un ordine di grandezza talmente basso da non influenzare notevolmente le misure prese. \\
 
 
-Le incertezze maggiori si registrano sulle misure relative al campione \textbf{C}, in cui la stima del volume del foro ha influito molto sulla qualità del calcolo della densità, ma risulta invece inferiore l'incertezza ottenuta sulla densità del campione \textbf{B} rispetto a quelle sulle misure ottenute senza l'uso del calibro a nonio: per quanto il metodo di discriminazione discusso nella sezione \ref{subsec:singolo_campione} sia a nostro giudizio corretto, a posteriori sembrerebbe che l'incertezza sull'offset del calibro Palmer sia più influente al momento della propagazione dell'errore sulla densità rispetto all'incertezza del calibro a nonio, anche a fronte di una migliore precisione del primo rispetto al secondo. Probabilmente se dovessimo ripetere l'esperienza opteremmo per il calibro a nonio per ogni misura di lunghezza. \\
+Le incertezze maggiori si registrano sulla densità del campione \textbf{C}, in cui la stima del volume del foro ha influito molto sulla qualità del calcolo. Risulta invece inferiore l'incertezza ottenuta sulla densità del campione \textbf{B} rispetto a quelle sulle misure ottenute senza l'uso del calibro a nonio: per quanto il metodo di discriminazione discusso nella sezione \ref{subsec:singolo_campione} sia a nostro giudizio corretto, a posteriori sembrerebbe che l'incertezza sull'offset del calibro Palmer sia più influente al momento della propagazione dell'errore sulla densità rispetto all'incertezza del calibro a nonio, anche a fronte di una migliore precisione del primo rispetto al secondo. Probabilmente se dovessimo ripetere l'esperienza opteremmo per il calibro a nonio per ogni misura di lunghezza. \\
 
 
 Per quanto riguarda il metodo grafico, riteniamo che esso sia comunque foriero di una stima accurata, pur essendo da noi condotto cercando ``a occhio'' la retta che meglio interpolasse i dati. 
