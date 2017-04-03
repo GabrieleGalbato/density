@@ -303,11 +303,11 @@ dove intendiamo con $\sigma_D, \sigma_h, \sigma_{\bar{z_0}}$ le incertezze rispe
 \begin{align}\label{eq:partial_V_A}
 	\frac{\partial V}{\partial D} &= \frac{\pi}{4000} (2Dh - 2D\bar{z_0} -2h\bar{z_0}+2\bar{z_0}^2) \\
 	\frac{\partial V}{\partial h} &= \frac{\pi}{4000} ( D^2 + \bar{z_0}^2 - 2D\bar{z_0}) \\
-	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000} ( - D^2 + h -3 \bar{z_0}^2 - 2 Dh + 2D\bar{z_0}).
+	\frac{\partial V}{\partial \bar{z_0}} &= \frac{\pi}{4000} ( - D^2 + 2h\bar{z_0} -3 \bar{z_0}^2 - 2 Dh + 4D\bar{z_0}).
 \end{align}
 Applicando (\ref{eq:ub_A}) a ciascuna densità e calcolandone la media otteniamo
 \begin{equation}\label{eq:ub_A_finale}
-	u_B = \SI{0,0043}{g/cm^3},
+	u_\rho = \SI{0,0043}{g/cm^3},
 \end{equation}
 applicando quindi (\ref{eq:sigma_density}) otteniamo un'incertezza
 \begin{equation}\label{eq:sigma_density_finale}
@@ -499,21 +499,21 @@ I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 \centering
 \begin{tabular}{rrl}
 \hline
-Altezza campione (h) & \SI{15,220 \pm 0,001}{} & \SI{}{mm} \\
-Diametro campione (D) & \SI{12,990 \pm 0,001}{} & \SI{}{mm} \\
-Diametro foro (d) & \SI{0,300 \pm 0,005}{} & \SI{}{cm} \\
-Massa campione (m) & \SI{16,0210 \pm 0,0003}{} & \SI{}{g} \\
+Altezza campione ($h$) & \SI{15,220 \pm 0,001}{} & \SI{}{mm} \\
+Diametro campione ($D$) & \SI{12,990 \pm 0,001}{} & \SI{}{mm} \\
+Diametro foro ($d$) & \SI{0,300 \pm 0,005}{} & \SI{}{cm} \\
+Massa campione ($m$) & \SI{16,0210 \pm 0,0003}{} & \SI{}{g} \\
 \hline
 \end{tabular}
 \end{table}
 
 Calcoliamo dunque il volume che avrebbe il campione se non fosse forato
 	\[
-	V_{\text{lordo}} = \frac{\pi}{4}\cdot\Big(\frac{D-z_0}{10}\Big)^2\cdot\frac{h-z_0}{10} = \SI{2,014}{cm^3},
+	V_{\text{lordo}} = \frac{\pi}{4}\cdot (D-z_0)^2\cdot(h-z_0) = \SI{2014,42}{mm^3} = \SI{2,014}{cm^3},
 	\]
-quindi il volume del foro
+quindi il volume del foro, con $d$ espresso in \SI{}{mm} ($d = \SI{3,00 \pm 0,05}{mm}$),
 	\[
-	V_{\text{foro}} = \frac{\pi}{4}\cdot d^2\cdot\frac{D-z_0}{10} = \SI{0,092}{cm^3};
+	V_{\text{foro}} = \frac{\pi}{4}\cdot d^2\cdot(D-z_0) = \SI{91,78}{mm^3} = \SI{0,092}{cm^3};
 	\]
 la densità sarà dunque data da 
 	\[
@@ -521,14 +521,14 @@ la densità sarà dunque data da
 	\]
 Propaghiamo ora l'incertezza su tale valore, tenendo conto delle seguenti incertezze sulle singole grandezze, ottenute sommando in quadratura la deviazione standard della media calcolata con i metodi precedenti (indicata con $\sigma$, con abuso di notazione) e l'incertezza strumentale (indicata con $u_B$, con abuso di notazione):
 	\begin{align*}
-	\sigma_D &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{1,85e-3}{mm} \\
-	\sigma_h &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{1,32e-3}{mm} \\
+	\sigma_D &= \sqrt{\sigma^2+u_B^2} = \SI{9,055e-3}{mm} \\
+	\sigma_h &= \sqrt{\sigma^2+u_B^2} = \SI{5,099e-3}{mm} \\
 	\sigma_{\bar{z_0}} &= \sqrt{\Big(\frac{\sigma}{\sqrt{10}}\Big)^2+u_B^2} = \SI{1,52e-3}{mm} \\
-	\sigma_d &= \sqrt{\Big(\frac{\sigma}{\sqrt{30}}\Big)^2+u_B^2} = \SI{5,03e-3}{cm} = \SI{50,3e-3}{mm},
+	\sigma_d &= \sqrt{\sigma^2+u_B^2} = \SI{58,310e-3}{mm},
 	\end{align*}
-Esprimiamo d'ora in avanti il diametro del foro come $d = \SI{3,00 \pm 0,05}{mm}$, cambiando unità di misura per semplificare i calcoli. L'equazione per calcolare il volume netto del campione è 
+L'equazione per calcolare il volume netto del campione è 
 	\[
-	V_{\text{netto}} = \frac{\pi}{4000}\Big[(D-\bar{z_0})^2(h-\bar{z_0})-d^2(D-\bar{z_0})\Big],
+	V_{\text{netto}} = \frac{\pi}{4}\Big[(D-\bar{z_0})^2(h-\bar{z_0})-d^2(D-\bar{z_0})\Big],
 	\]
 l'incertezza sul volume è dunque data da 
 	\[
@@ -536,29 +536,29 @@ l'incertezza sul volume è dunque data da
 	\]
 in cui si ha 
 	\begin{align*}
-	\frac{\partial V}{\partial D} &= \frac{\pi}{4000}(2Dh-2D\bar{z_0}-2\bar{z_0}h+2\bar{z_0}^2-d^2) = \SI{0,303}{cm^2} \\
-	\frac{\partial V}{\partial h} &= \frac{\pi}{4000}(D^2-2D\bar{z_0}+\bar{z_0}^2) = \SI{0,132}{cm^2} \\
-	\frac{\partial V}{\partial z_0} &= \frac{\pi}{4000}(-D^2-2Dh+4D\bar{z_0}+2\bar{z_0}h-3\bar{z_0}^2+d^2) = \SI{-0,435}{cm^2} \\
-	\frac{\partial V}{\partial d} &= \frac{\pi}{4000}(-2dD+2d\bar{z_0}) = \SI{-0,061}{cm^2};
+	\frac{\partial V}{\partial D} &= \frac{\pi}{4}(2Dh-2D\bar{z_0}-2\bar{z_0}h+2\bar{z_0}^2-d^2) = \SI{303,22}{mm^2}=\SI{3,032}{cm^2} \\
+	\frac{\partial V}{\partial h} &= \frac{\pi}{4}(D^2-2D\bar{z_0}+\bar{z_0}^2) = \SI{132,41}{mm^2} = \SI{1,324}{cm^2} \\
+	\frac{\partial V}{\partial z_0} &= \frac{\pi}{4}(-D^2-2Dh+4D\bar{z_0}+2\bar{z_0}h-3\bar{z_0}^2+d^2) = \SI{-435,63}{mm^2}=\SI{-4,356}{cm^2} \\
+	\frac{\partial V}{\partial d} &= \frac{\pi}{4}(-2dD+2d\bar{z_0}) = \SI{-61,186}{mm^2} = \SI{-0,612}{cm^2};
 	\end{align*}
 sostituendo nell'equazione precedente, l'incertezza sul volume sarà pari a
 	\[
-	\sigma_V = \SI{3,193e-3}{cm^3},
+	\sigma_V = \SI{4,600}{mm^3} = \SI{0,005}{cm^3}.
 	\]
-ricordando che nell'equazione citata avevamo diviso tutte le grandezze espresse in millimetri per $10$, in modo da esprimere il volume in \SI{}{cm^3}. L'incertezza sulla densità sarà quindi data dalla somma in quadratura delle incertezze relative di massa e volume, pari a
+L'incertezza sulla densità sarà quindi data dalla somma in quadratura delle incertezze relative di massa e volume, pari a
 	\begin{align*}
-	\frac{\sigma_V}{V} &= 1,66\times10^{-3} \\
+	\frac{\sigma_V}{V} &= 2,39\times10^{-3} \\
 	\frac{\sigma_m}{m} &= \frac{\sqrt{\big(\frac{\sigma}{\sqrt{30}}\big)+u_B^2}}{m} = 2,192\times10^{-5},
 	\end{align*}
 perciò
 	\[
-	\sigma_\rho = \sqrt{\Big(\frac{\sigma_V}{V}\Big)^2 + \Big(\frac{\sigma_m}{m}\Big)^2}\cdot\rho = \SI{0,014}{\frac{g}{cm^3}}.
+	\sigma_\rho = \sqrt{\Big(\frac{\sigma_V}{V}\Big)^2 + \Big(\frac{\sigma_m}{m}\Big)^2}\cdot\rho = \SI{0,02}{\frac{g}{cm^3}}.
 	\]
 La nostra stima della densità del campione \textbf{C} è dunque
 	\[
-	\boxed{\textbf{{\SI{8,336 \pm 0,014}{\frac{g}{cm^3}}}}}.
+	\boxed{\textbf{{\SI{8,34 \pm 0,02}{\frac{g}{cm^3}}}}}.
 	\]
-Confrontando tale valore con quelli a nostra disposizione in una tabella di densità relative a materiali noti, desumiamo che il campione \textbf{C} sia costituito da \emph{ottone} ($\rho = \SI{8,44}{g/cm^3}$). L'incertezza relativa sul valore di densità da noi stimato è dello $0,2\%$, maggiore di quella ottenuta nei casi precedenti in quanto abbiamo utilizzato il calibro a nonio per misurare il diametro del foro, che ha aumentato nel complesso l'errore. La discrepanza che invece rileviamo tra il valore da noi stimato e quello assunto vero per la densità dell'ottone riteniamo sia dovuta all'approssimazione da noi fatta della forma del foro, assunta cilindrica, del suo posizionamento rispetto alla base e dell'eventuale espansione termica del campione stesso.
+Confrontando tale valore con quelli a nostra disposizione in una tabella di densità relative a materiali noti, desumiamo che il campione \textbf{C} sia costituito da \emph{ottone} ($\rho = \SI{8,44}{g/cm^3}$). L'incertezza relativa sul valore di densità da noi stimato è dello $0,24\%$, maggiore di quella ottenuta nei casi precedenti in quanto abbiamo utilizzato il calibro a nonio per misurare il diametro del foro, che ha aumentato nel complesso l'errore. La discrepanza che invece rileviamo tra il valore da noi stimato e quello assunto vero per la densità dell'ottone riteniamo sia dovuta all'approssimazione da noi fatta della forma del foro, assunta cilindrica, del suo posizionamento rispetto alla base e dell'eventuale espansione termica del campione stesso.
 
 %=========== CAMPIONI A METODO GRAFICO ==============
 
