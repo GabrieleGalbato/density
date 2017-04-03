@@ -26,6 +26,7 @@ PP1_densita copia.lot
 PP1_densita copia.log
 
 PP1_densita copia.aux
+<<<<<<< Updated upstream
 *.log
 
 *.aux
@@ -37,3 +38,10 @@ PP1_densita copia.aux
 *.toc
 
 *.gz
+=======
+PP1_densita copia.aux
+
+PP1_densita copia.aux
+
+PP1_densita copia.log
+>>>>>>> Stashed changes

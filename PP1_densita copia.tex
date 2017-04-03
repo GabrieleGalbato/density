@@ -53,6 +53,7 @@ In questa esperienza ci proponiamo di compiere misure di densità di diversi camp
 \newpage
 \tableofcontents %Indice
 \listoftables %Indice delle tabelle
+\listoffigures %Indice dei grafici
 \pagebreak
 \section{Convenzioni e formule}
 In questa relazione verranno usate le seguenti convenzioni:
@@ -120,7 +121,7 @@ La bilancia di precisione può essere tarata a $0$ prima di ogni misurazione; la 
 Scegliamo come campione dal gruppo \textbf{A} il cilindro che abbiamo numerato $9$, quindi ne misuriamo 30 volte l'altezza con il calibro a nonio e con il calibro Palmer. Scelto il calibro Palmer per proseguire le misurazioni, come argomentato più avanti, misuriamo 30 volte il diametro e poi 30 volte la massa con la bilancia di precisione. Tutti i dati sperimentali raccolti sono riportati nella tabella~\ref{tab:cilindro9_A}. 
 
 \begin{table}[H]
-\caption{30 misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sul cilindro 9 dei campioni A. Viene riportata in alto l'incertezza degli strumenti.}
+\caption{Misure sul campione A-9}
 \label{tab:cilindro9_A}
 \centering
 \begin{tabular}{cccc}
@@ -219,7 +220,7 @@ Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate c
 \end{table}
 
 \begin{table}[t]
-\caption{Riepilogo dei valori di altezza misurata con Palmer e nonio, diametro misurato con Palmer e massa del cilindro 9 dei campioni A.}
+\caption{Sintesi misure sul campione A-9}
 \label{tab:riepilogo_cilindro9_A}
 \centering
 \begin{tabular}{rcccc}
@@ -235,7 +236,7 @@ Appare quindi immediatamente evidente che l'incertezza sulle misure effettuate c
 \end{table}
 
 \begin{table}[h]
-\caption{Misure di volume e densità ripetute 30 volte sul campione 9}
+\caption{Volume e densità per ogni misura del campione A-9}
 \label{tab:vol_rho_cil9}
 \centering
 \begin{tabular}{ccc}
@@ -337,7 +338,7 @@ Per ottenere la miglior stima dell'incertezza sulla densità media dei trenta cam
 \end{equation} che, come prima, è assolutamente compatibile con la densità dell'\emph{alluminio} (\SI{2,70}{g/cm^3}).
 
 \begin{table}[H]
-\caption{Singole misurazioni di altezza con Palmer e nonio, di diametro con Palmer e di massa sui 30 cilindri. Viene riportata in alto l'incertezza degli strumenti e la media delle misure.}
+\caption{Misure sui 30 campioni A}
 \label{tab:30_cilindri}
 \centering
 \begin{tabular}{cccc}
@@ -381,7 +382,7 @@ Incertezza: & 0,001 & 0,001 & 0,0003 \\ [0.1cm]
 \end{table}
 
 \begin{table}[ht]
-\caption{Considerazioni globali su volume e densità dei 30 campioni}
+\caption{Sintesi della densità dei 30 campioni A}
 \label{tab:vol_rho_global}
 \centering
 \begin{tabular}{cccccc}
@@ -396,7 +397,7 @@ Volume (\SI{}{cm^3}) & 1,775 & 0,5249 & 2,370 & 0,915 \\ [0.2cm]
 
 
 \begin{table}[H]
-\caption{Misure di volume e densità dei 30 campioni}
+\caption{Volume e densità dei 30 campioni A}
 \label{tab:vol_rho}
 \centering
 \begin{tabular}{ccc}
@@ -498,7 +499,7 @@ Il campione \textbf{C} è un cilindro che presenta un foro in prossimità della ba
 I dati ottenuti sono riportati nella tabella~\ref{tab:cilindro_C}.
 
 \begin{table}[H]
-\caption{Dimensioni e massa del campione C.}
+\caption{Dimensioni e massa del campione C}
 \label{tab:cilindro_C}
 \centering
 \begin{tabular}{rrl}
@@ -536,7 +537,7 @@ L'equazione per calcolare il volume netto del campione è
 	\]
 l'incertezza sul volume è dunque data da 
 	\[
-	\sigma_V = \left[\Bigg(\frac{\partial V}{\partial D}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_D\Bigg)^2 + \Bigg(\frac{\partial V}{\partial h}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_h\Bigg)^2 + \Bigg(\frac{\partial V}{\partial \bar{z_0}}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_{\bar{z_0}}\Bigg)^2 + \Bigg(\frac{\partial V}{\partial d}\bigg\vert_{(D,h,d,\bar{z_0})}\sigma_d\Bigg)^2\right]^{\frac{1}{2}},
+	\sigma_V = \left(\left.\frac{\partial V}{\partial D}\right\vert_{(D,h,d,\bar{z_0})}^2\sigma_D^2 + \left.\frac{\partial V}{\partial h}\right\vert_{(D,h,d,\bar{z_0})}^2\sigma_h^2 + \left.\frac{\partial V}{\partial \bar{z_0}}\right\vert_{(D,h,d,\bar{z_0})}^2\sigma_{\bar{z_0}}^2 + \left.\frac{\partial V}{\partial d}\right\vert_{(D,h,d,\bar{z_0})}^2\sigma_d^2\right)^{1/2},
 	\]
 in cui si ha 
 	\begin{align*}
@@ -614,7 +615,7 @@ La stima della densità con metodo grafico è dunque
 \begin{table}[t]
 \centering
 \begin{threeparttable}
-\caption{Misure della variazione del livello dell'acqua in una provetta graduata in seguito all'inserimento graduale di 10 gruppi di 3 cilindri.}
+\caption{Misure della variazione del livello dell'acqua in una provetta graduata}
 \label{tab:provetta}
 \begin{tabular}{cccc}
   \hline
@@ -667,7 +668,7 @@ Per quanto riguarda il metodo grafico, riteniamo che esso sia comunque foriero d
 Le incertezze maggiori si registrano sulle misure relative al campione \textbf{B}, che essendo più alto degli altri ha richiesto l'utilizzo di due strumenti diversi, nonio e Palmer, per la misura di altezza e diametro; e su quelle relative al campione \textbf{C}, in cui la stima del volume del foro ha influito molto sulla qualità del calcolo della densità. 
 
 \begin{table}[ht]
-\caption{Considerazioni globali su volume e densità del campione 9}
+\caption{Sintesi delle misure di volume e densità ripetute 30 volte sul campione 9}
 \label{tab:vol_rho_global9}
 \centering
 \begin{tabular}{cccccc}
